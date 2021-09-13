@@ -67,7 +67,7 @@ function toggleBibtex(articleid) {
 	journal={IEEE Transactions on Neural Networks and Learning Systems}, 
 	title={Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks}, 
 	year={2021},
-	note={{DOI}:10.1109/TNNLS.2021.3084682}
+	note={doi\:10.1109/TNNLS.2021.3084682}
    }
 </pre>
 </div>
@@ -79,7 +79,7 @@ function toggleBibtex(articleid) {
 	journal={IEEE Transactions on Geoscience and Remote Sensing},
 	title={{VO+Net}: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening},
 	year={2021},
-	note={{DOI}:10.1109/TGRS.2021.3066425}
+	note={{doi\:10.1109/TGRS.2021.3066425}
    }
 </pre>
 </div>
