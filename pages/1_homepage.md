@@ -116,7 +116,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Awards and Honors
+### Awards
 
 * Academic Scholarship, USETC, 2020
 
