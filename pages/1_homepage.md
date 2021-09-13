@@ -48,8 +48,8 @@ function toggleBibtex(articleid) {
 	
 ### Biography
  
- <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email:** <hujf0206@163.com>  <br><br>| &emsp;![image](https://J-FHu.github.io/images/Personal.jpg)&emsp; 
-
+ <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email:** <hujf0206@163.com>  <br> <br> &emsp;![image](https://J-FHu.github.io/images/Personal.jpg)&emsp; 
+ 
 ---
 
 
@@ -124,14 +124,12 @@ function toggleBibtex(articleid) {
 * National First Prize of [CUMCM](http://www.mcm.edu.cn/), USETC, 2017
 
 * People Scholarship, USETC, 2017 and 2018
-* 
+
 ---
 
 ### Academic Activities
 
-Peer-Reviewer：
-
-IEEE Transactions on Geoscience and Remote Sensing
+Peer-Reviewer: IEEE Transactions on Geoscience and Remote Sensing
 
 ---
 
