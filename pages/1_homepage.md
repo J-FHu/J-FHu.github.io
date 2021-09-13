@@ -6,6 +6,17 @@ permalink: /homepage/
 
 ---
 
+---
+
+
+<style>
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
 
 /*************************************
    The box that contain BibTeX code
@@ -34,7 +45,9 @@ function toggleBibtex(articleid) {
     return;
   }
 }
+</script>
 
+	
 ### Biography
  
  <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. Ting-Zhu Huang and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning.<br> <br> **Email:** <hujf0206@163.com>  <br><br>| &emsp;![image](https://github.com/J-FHu/J-FHu.github.io/blob/main/images/Personal.jpg)&emsp; |
