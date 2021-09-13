@@ -70,7 +70,7 @@ function toggleBibtex(articleid) {
 @ARTICLE{Wu2021VO,
 	author={Z.-C. Wu and T.-Z. Huang and L.-J. Deng and J.-F. Hu and G. Vivone},
 	journal={IEEE Transactions on Geoscience and Remote Sensing},
-	title={\{VO+Net\}: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening},
+	title={{VO+Net}: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening},
 	year={2021},
 	doi={10.1109/TGRS.2021.3066425}
    }
