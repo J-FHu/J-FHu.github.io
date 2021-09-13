@@ -4,9 +4,7 @@ title: Jin-Fan Hu
 comments: true
 permalink: /homepage/
 
----
-
----
+***
 
 
 <style>
@@ -52,7 +50,7 @@ function toggleBibtex(articleid) {
  
 | <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. Ting-Zhu Huang and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email:** <hujf0206@163.com>  <br><br>| &emsp;![image](https://J-FHu.github.io/images/Personal.jpg)&emsp; |
 
----
+***
 
 
 ### Publications
@@ -109,15 +107,14 @@ function toggleBibtex(articleid) {
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**.
 
----
-
+***
 ### Experiences 
 
 * 09/2019-06/2022: University of Electronic Science and Technology of China (UESTC); Master student in Applied Mathematics. (Supervisor: Prof. Ting-Zhu Huang and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/))
 
 * 09/2015-06/2019: University of Electronic Science and Technology of China (UESTC); Bachelor student in Information and Computing Science.
 
----
+***
 
 ### Awards and Honors
 
@@ -127,7 +124,7 @@ function toggleBibtex(articleid) {
 
 * People Scholarship, USETC, 2017 and 2018
 
----
+***
 
 ### Academic Activities
 
@@ -135,7 +132,7 @@ Peer-Reviewer：
 
 IEEE Transactions on Geoscience and Remote Sensing
 
----
+***
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=573geowbknl&amp;m=7&amp;c=ffc000&amp;cr1=ffffff&amp;f=arial&amp;l=1&amp;s=170&amp;bv=70" async="async"></script>
 
