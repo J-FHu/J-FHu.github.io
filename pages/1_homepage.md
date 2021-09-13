@@ -10,7 +10,7 @@ permalink: /homepage/
 
 ### Biography
  
- <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. Ting-Zhu Huang and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the School of Mathematical Sciences, University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning.<br> <br> **Email:** <hujf0206@163.com>  
+ <br>**Jin-Fan Hu** is currently pursuing the M.S. degree in mathematics (advised by Prof. Ting-Zhu Huang and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning.<br> <br> **Email:** <hujf0206@163.com>  ![image](https://github.com/J-FHu/J-FHu.github.io/blob/main/images/Personal.jpg)&emsp; |
 
 ---
 
@@ -34,7 +34,7 @@ permalink: /homepage/
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via Highresolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**.
-* 
+
 ---
 
 ### Experiences 
@@ -52,6 +52,7 @@ permalink: /homepage/
 * National First Prize of [CUMCM](http://www.mcm.edu.cn/), USETC, 2017
 
 * People Scholarship, USETC, 2017 and 2018
+
 ---
 
 ### Academic Activities
