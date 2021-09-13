@@ -5,7 +5,7 @@ comments: true
 permalink: /publications/
 
 ---
-
+<!-- 
 * content
 {:toc}
 
@@ -101,5 +101,5 @@ function toggleBibtex(articleid) {
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via Highresolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**.
-
+ -->
 
