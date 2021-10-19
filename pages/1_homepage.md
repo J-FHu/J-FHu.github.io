@@ -117,8 +117,9 @@ function toggleBibtex(articleid) {
 ---
 
 ### Awards
+* National Scholarship, UESTC, 2021
 
-* Academic Scholarship, UESTC, 2020
+* Academic Scholarship, UESTC, 2020 and 2021
 
 * National First Prize of [CUMCM](http://www.mcm.edu.cn/), UESTC, 2017
 
