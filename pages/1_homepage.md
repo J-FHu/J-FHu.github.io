@@ -55,8 +55,6 @@ function toggleBibtex(articleid) {
 ### Publications
 
 **Accepted**
-* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2022.
-
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
 <div id="bib_Hutnnls" class="BibTeX noshow">
@@ -70,6 +68,9 @@ function toggleBibtex(articleid) {
    }
 </pre>
 </div>
+
+* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
+
 * Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
 <div id="bib_Wu2021VO" class="BibTeX noshow">
 <pre>
