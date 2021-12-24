@@ -64,6 +64,10 @@ function toggleBibtex(articleid) {
    }
 </pre>
 </div>
+
+* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**，2021.
+
+
 * Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
 <div id="bib_Wu2021VO" class="BibTeX noshow">
 <pre>
@@ -100,6 +104,5 @@ function toggleBibtex(articleid) {
 
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via Highresolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
-* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**.
 
 
