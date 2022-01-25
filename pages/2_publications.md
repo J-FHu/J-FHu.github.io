@@ -98,9 +98,11 @@ function toggleBibtex(articleid) {
 
 **Under Review**
 
+* Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Transactions on Geoscience and Remote Sensing_**.
+
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, J. Chanussot and G. Vivone. PIRNet: A Progressive Iterative Residual Network for Hyperspectral Image Super-resolution. **_IEEE Transactions on Image Processing_**.
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. (In preparation) **_IEEE Signal Processing Letters_**.
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**.
 
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via Highresolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
