@@ -105,7 +105,7 @@ function toggleBibtex(articleid) {
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, J. Chanussot and G. Vivone. PIRNet: A Progressive Iterative Residual Network for Hyperspectral Image Super-resolution. **_IEEE Transactions on Image Processing_**.
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, Hong-Xia Dou, Danfeng Hong, Gemine Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**.
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**.
 
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
