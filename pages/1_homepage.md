@@ -134,7 +134,7 @@ function toggleBibtex(articleid) {
 
 ### Academic Activities
 
-Peer-Reviewer: IEEE Transactions on Geoscience and Remote Sensing
+Peer-Reviewer: IEEE Transactions on Geoscience and Remote Sensing, IEEE Geoscience and Remote Sensing Letters
 
 ---
 
