@@ -150,7 +150,7 @@ function toggleBibtex(articleid) {
 ### Academic Activities
 
 Peer-Reviewer: 
-* IEEE Transactions on Geoscience AND Remote Sensing (IEEE TGRS)
+* IEEE Transactions on Geoscience And Remote Sensing (IEEE TGRS)
 
 * IEEE Geoscience and Remote Sensing Letters (IEEE GRSL)
 
