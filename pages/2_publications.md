@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications
+title: 胡锦帆
 comments: true
 permalink: /publications/
 
@@ -50,7 +50,63 @@ function toggleBibtex(articleid) {
 }
 </script>
 
-**Accepted**
+---
+layout: page
+title: Jin-Fan Hu
+comments: true
+permalink: /homepage/
+---
+
+<style>
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
+
+/*************************************
+   The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.BibTeX {
+  margin-right: 1%;
+  margin-left: 3%;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+  border: 1px solid silver;
+  padding: 0.3em 0.5em;
+  background: #eeeeee;
+}
+div.BibTeX pre { font-size: 85%; overflow: auto;  width: 100%; }
+</style>
+
+<script>
+function toggleBibtex(articleid) {
+  var bib = document.getElementById('bib_'+articleid);
+  if (bib) {
+    if(bib.className.indexOf('BibTeX') != -1) {
+    bib.className.indexOf('noshow') == -1?bib.className = 'BibTeX noshow':bib.className = 'BibTeX';
+    }
+  } else {
+    return;
+  }
+}
+</script>
+
+
+
+	
+### 个人简介
+ 
+| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** 将在2022年加入[中科院](https://www.cas.cn/)，[深圳先进技术研究院](https://www.siat.ac.cn/),[XPixel](http://xpixel.group/index.html)团队攻读博士学位。博士生导师为董超副研究员。 他将于2022年6月在[电子科技大学](https://www.uestc.edu.cn/)[数学科学学院](https://www.math.uestc.edu.cn/)获得数学专业理学硕士学位（导师为[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)与[邓良剑研究员](https://liangjiandeng.github.io/)）。他的研究兴趣包括图像处理与深度学习。 <br> <br> **电子邮箱:** <hujf0206@163.com> <br> **关注我:** [Github](https://github.com/J-FHu) &emsp; [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
+
+
+
+### 发表文章
+
+**已接收**
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
 <div id="bib_Hutnnls" class="BibTeX noshow">
@@ -66,7 +122,7 @@ function toggleBibtex(articleid) {
 </div>
 
 * Siran Peng, **Jin-Fan Hu**, Yu-Wei Zhuo, Liang-Jian Deng. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
-<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
+<a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a>
 <div id="bib_pengijcai2022" class="BibTeX noshow">
 <pre>
 @ARTICLE{pengijcai2022,
@@ -82,7 +138,7 @@ function toggleBibtex(articleid) {
 </pre>
 </div>   
 
-* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**，2021.
+* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
 <a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
 <div id="bib_xu2022exemplar" class="BibTeX noshow">
 <pre>
@@ -96,6 +152,8 @@ function toggleBibtex(articleid) {
 }
 </pre>
 </div>
+
+
 
 * Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
 <div id="bib_Wu2021VO" class="BibTeX noshow">
@@ -125,8 +183,7 @@ function toggleBibtex(articleid) {
 </pre>
 </div>
 
-**Under Review**
-
+**审稿中**
 
 * Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**.
 
@@ -134,7 +191,46 @@ function toggleBibtex(articleid) {
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**.
 
-* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via Highresolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
+* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
+
+
+
+---
+
+### 经历 
+
+* 09/2019-06/2022: 电子科技大学(UESTC); 攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
+
+* 09/2015-06/2019: 电子科技大学(UESTC); 攻读信息与计算科学学士
+
+---
+
+### 荣誉奖励
+* 硕士生国家奖学金, UESTC, 2021
+
+* 学业奖学金, UESTC, 2020 and 2021
+
+* [全国大学生数学建模竞赛](http://www.mcm.edu.cn/)国家一等奖, UESTC, 2017
+
+* 人民奖学金, UESTC, 2017 and 2018
+
+---
+
+### 学术活动
+
+审稿人: 
+* IEEE Transactions on Geoscience And Remote Sensing (IEEE TGRS)
+
+* IEEE Geoscience and Remote Sensing Letters (IEEE GRSL)
+
+* IEEE Transactions on Computational Imaging (IEEE TCI)
+
+---
+
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=573geowbknl&amp;m=7&amp;c=ffc000&amp;cr1=ffffff&amp;f=arial&amp;l=1&amp;s=170&amp;bv=70" async="async"></script>
+
+
+
 
 
 
