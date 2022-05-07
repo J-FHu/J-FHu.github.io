@@ -48,7 +48,7 @@ function toggleBibtex(articleid) {
 	
 ### Biography
  
-| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** is currently pursuing the M.S. degree in mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email：** <hujf0206@163.com> &emsp; **Github：** <https://github.com/J-FHu> <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
+| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** will pursue the Ph.D. degree in [XPixel](http://xpixel.group/index.html), Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences (CAS), in 2022. He will be supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He will obtain the M.S. degree in mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email：** <hujf0206@163.com> &emsp; **Github：** <https://github.com/J-FHu>&emsp; **Google Scholar: ** <https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ> <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
 
 
 
