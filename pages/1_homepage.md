@@ -70,7 +70,7 @@ function toggleBibtex(articleid) {
 </div>
 
 * Siran Peng, **Jin-Fan Hu**, Yu-Wei Zhuo, Liang-Jian Deng. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
-<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
+<a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a>
 <div id="bib_pengijcai2022" class="BibTeX noshow">
 <pre>
 @ARTICLE{pengijcai2022,
