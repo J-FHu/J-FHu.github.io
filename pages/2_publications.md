@@ -2,8 +2,7 @@
 layout: page
 title: 胡锦帆
 comments: true
-permalink: /publications/
-
+permalink: /CNhomepage/
 ---
 
 * content
