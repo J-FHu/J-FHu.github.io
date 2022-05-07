@@ -149,7 +149,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### 经历 
+### 个人经历 
 
 * 09/2019-06/2022: 电子科技大学(UESTC); 攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
 
