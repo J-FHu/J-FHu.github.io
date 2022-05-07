@@ -69,6 +69,24 @@ function toggleBibtex(articleid) {
 </pre>
 </div>
 
+* Siran Peng, **Jin-Fan Hu**, Yu-Wei Zhuo, Liang-Jian Deng. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
+
+<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
+<div id="bib_pengijcai2022" class="BibTeX noshow">
+<pre>
+@ARTICLE{pengijcai2022,
+	author={S. Peng, L.-J. Deng, J.-F. Hu, and Y.-W. Zhuo},
+	journal={International Joint Conferences on Artificial Intelligence (IJCAI)}, 
+	title={Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening}, 
+	year={2022},
+	volume={},
+	number={},
+	pages={},
+	doi={}
+   }
+</pre>
+</div>   
+
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
 <a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
 <div id="bib_xu2022exemplar" class="BibTeX noshow">
