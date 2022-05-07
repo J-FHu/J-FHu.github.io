@@ -156,7 +156,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Awards
+### Honors and Awards
 * National Scholarship, UESTC, 2021
 
 * Academic Scholarship, UESTC, 2020 and 2021
