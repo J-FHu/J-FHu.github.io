@@ -145,26 +145,24 @@ function toggleBibtex(articleid) {
 
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**. 
 
-
-
 ---
 
 ### 个人经历 
 
-* 09/2019-06/2022: 电子科技大学(UESTC); 攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
+* 09/2019-06/2022: 于电子科技大学（UESTC）攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
 
-* 09/2015-06/2019: 电子科技大学(UESTC); 攻读信息与计算科学学士
+* 09/2015-06/2019: 于电子科技大学（UESTC）攻读信息与计算科学学士
 
 ---
 
 ### 荣誉奖励
-* 硕士生国家奖学金, UESTC, 2021
+* 2021年于电子科技大学获得硕士生国家奖学金 
 
-* 学业奖学金, UESTC, 2020 and 2021
+* 2020和2021年于电子科技大学两次获得学业奖学金
 
-* [全国大学生数学建模竞赛](http://www.mcm.edu.cn/)国家一等奖, UESTC, 2017
+* 2017年于电子科技大学获得[全国大学生数学建模竞赛](http://www.mcm.edu.cn/)国家一等奖
 
-* 人民奖学金, UESTC, 2017 and 2018
+* 2017和2018年于电子科技大学两次获得人民奖学金
 
 ---
 
