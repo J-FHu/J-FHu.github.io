@@ -5,6 +5,9 @@ comments: true
 permalink: /homepage/
 ---
 
+* content
+{:toc}
+
 <style>
 .biblist { }
 
