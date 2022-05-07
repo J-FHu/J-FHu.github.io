@@ -52,7 +52,7 @@ function toggleBibtex(articleid) {
 	
 ### 个人简介
  
-| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** 将在2022年加入[中科院](https://www.cas.cn/)，[深圳先进技术研究院](https://www.siat.ac.cn/)，[XPixel](http://xpixel.group/index.html)团队攻读博士学位。博士生导师为[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)。 他将于2022年6月在[电子科技大学](https://www.uestc.edu.cn/)，[数学科学学院](https://www.math.uestc.edu.cn/)获得数学专业理学硕士学位（导师为[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)与[邓良剑研究员](https://liangjiandeng.github.io/)）。他的研究兴趣包括图像处理与深度学习。 <br> <br> **电子邮箱:** <hujf0206@163.com> <br> **关注我:** [Github](https://github.com/J-FHu) &emsp; [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
+| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** 将于2022年加入[中科院](https://www.cas.cn/)，[深圳先进技术研究院](https://www.siat.ac.cn/)，[XPixel](http://xpixel.group/index.html)团队攻读博士学位。博士生导师为[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)。 他将于2022年6月在[电子科技大学](https://www.uestc.edu.cn/)，[数学科学学院](https://www.math.uestc.edu.cn/)获得数学专业理学硕士学位（导师为[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)与[邓良剑研究员](https://liangjiandeng.github.io/)）。他的研究兴趣包括图像处理与深度学习。 <br> <br> **电子邮箱:** <hujf0206@163.com> <br> **关注我:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
 
 
 
