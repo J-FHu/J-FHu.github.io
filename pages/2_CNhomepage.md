@@ -91,7 +91,7 @@ function toggleBibtex(articleid) {
 </div>   
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
-<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
+<a href="javascript:toggleBibtex('xu2022exemplar')" class="textlink">[BibTeX]</a>
 <div id="bib_xu2022exemplar" class="BibTeX noshow">
 <pre>
 @article{xu2022exemplar,
