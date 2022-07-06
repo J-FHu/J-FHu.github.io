@@ -52,7 +52,7 @@ function toggleBibtex(articleid) {
 	
 ### 个人简介
  
-| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** 目前在[中科院](https://www.cas.cn/)，[深圳先进技术研究院](https://www.siat.ac.cn/)，[XPixel](http://xpixel.group/index.html)团队攻读博士学位。博士生导师为[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)。 他分别于2019年和2022年在[电子科技大学](https://www.uestc.edu.cn/)获得数学学士与硕士学位（导师为[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)与[邓良剑研究员](https://liangjiandeng.github.io/)）。他的研究兴趣包括图像处理与深度学习。 <br> <br> **电子邮箱:** <hujf0206@163.com> <br> **关注我:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
+| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** 目前在[中科院](https://www.cas.cn/)，[深圳先进技术研究院](https://www.siat.ac.cn/)，[XPixel](http://xpixel.group/index.html)团队攻读博士学位。博士生导师为[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)。 他于2019年和2022年在[电子科技大学](https://www.uestc.edu.cn/)获得数学学士与硕士学位（导师为[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)与[邓良剑研究员](https://liangjiandeng.github.io/)）。他的研究兴趣包括图像处理与深度学习。 <br> <br> **电子邮箱:** <hujf0206@163.com> <br> **关注我:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu_small.jpg)&emsp; |
 
 
 
@@ -148,7 +148,7 @@ function toggleBibtex(articleid) {
 ---
 
 ### 个人经历 
-* 09/2022-至今: 于中国科学院大学（[UCAS](https://www.ucas.ac.cn/)），深圳先进技术研究院（[SIAT](https://www.siat.ac.cn/)）攻读计算机科学博士. (导师. [董超](http://xpixel.group/2010/01/20/chaodong.html))
+* 09/2022-至今: 于中国科学院大学（[UCAS](https://www.ucas.ac.cn/)），深圳先进技术研究院（[SIAT](https://www.siat.ac.cn/)）攻读计算机科学博士. (导师. [董超副研究员](http://xpixel.group/2010/01/20/chaodong.html))
 
 * 09/2019-06/2022: 于电子科技大学（[UESTC](https://www.uestc.edu.cn/)）攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
 
