@@ -51,7 +51,7 @@ function toggleBibtex(articleid) {
 	
 ### Biography
  
-| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** will pursue the Ph.D. degree in [XPixel](http://xpixel.group/index.html), Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)), in 2022. He will be supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He will obtain the M.S. degree in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) with the [School of Mathematical Sciences](https://www.math.uestc.edu.cn/), University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China. His research interests include image processing and deep learning. <br> <br> **Email:** <hujf0206@163.com> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp; |
+| <br>**Jin-Fan Hu/Jinfan Hu (胡锦帆)** is pursuing the Ph.D. degree in [XPixel](http://xpixel.group/index.html), Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)). He is supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) from the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China in 2019 and 2022. His research interests include image processing and deep learning. <br> <br> **Email:** <hujf0206@163.com> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp; |
 
 
 
@@ -150,9 +150,11 @@ function toggleBibtex(articleid) {
 
 ### Experiences 
 
-* 09/2019-06/2022: University of Electronic Science and Technology of China (UESTC); Master student in Mathematics. (Supervisor: Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/))
+* 09/2022-present: Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), University of Chinese Academy of Science ([UCAS](https://www.ucas.ac.cn/))s; Ph.D. student in Computer Science. (Supervisor: Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html))
 
-* 09/2015-06/2019: University of Electronic Science and Technology of China (UESTC); Bachelor student in Information and Computing Science.
+* 09/2019-06/2022: University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)); Master student in Mathematics. (Supervisor: Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/))
+
+* 09/2015-06/2019: University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)); Bachelor student in Information and Computing Science.
 
 ---
 
