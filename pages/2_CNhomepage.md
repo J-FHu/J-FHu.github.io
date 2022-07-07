@@ -148,9 +148,9 @@ function toggleBibtex(articleid) {
 ---
 
 ### 个人经历 
-* 09/2022-至今: 于中国科学院大学（[UCAS](https://www.ucas.ac.cn/)），深圳先进技术研究院（[SIAT](https://www.siat.ac.cn/)）攻读计算机科学博士. (导师. [董超副研究员](http://xpixel.group/2010/01/20/chaodong.html))
+* 09/2022-至今: 于中国科学院大学（[UCAS](https://www.ucas.ac.cn/)），深圳先进技术研究院（[SIAT](https://www.siat.ac.cn/)）攻读计算机科学博士 （导师：[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)）
 
-* 09/2019-06/2022: 于电子科技大学（[UESTC](https://www.uestc.edu.cn/)）攻读数学硕士 (导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/))
+* 09/2019-06/2022: 于电子科技大学（[UESTC](https://www.uestc.edu.cn/)）攻读数学硕士 （导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/)）
 
 * 09/2015-06/2019: 于电子科技大学（[UESTC](https://www.uestc.edu.cn/)）攻读信息与计算科学学士
 
