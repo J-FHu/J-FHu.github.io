@@ -62,18 +62,6 @@ function toggleBibtex(articleid) {
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**,2022.
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
-<div id="bib_Hutnnls" class="BibTeX noshow">
-<pre>
-@ARTICLE{Hutnnls,
-	author={Hu, Jin-Fan and Huang, Ting-Zhu and Deng, Liang-Jian and Jiang, Tai-Xiang and Vivone, Gemine and Chanussot, Jocelyn},
-	journal={IEEE Transactions on Neural Networks and Learning Systems}, 
-	title={Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks}, 
-	year={2021},
-	doi={10.1109/TNNLS.2021.3084682}
-   }
-</pre>
-</div>
 
 * S. Peng, **J.-F. Hu**, Y.-W. Zhuo, L.-J. Deng. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
 <a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a>
@@ -91,6 +79,19 @@ function toggleBibtex(articleid) {
    }
 </pre>
 </div>   
+
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
+<div id="bib_Hutnnls" class="BibTeX noshow">
+<pre>
+@ARTICLE{Hutnnls,
+	author={Hu, Jin-Fan and Huang, Ting-Zhu and Deng, Liang-Jian and Jiang, Tai-Xiang and Vivone, Gemine and Chanussot, Jocelyn},
+	journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+	title={Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks}, 
+	year={2021},
+	doi={10.1109/TNNLS.2021.3084682}
+   }
+</pre>
+</div>
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
 <a href="javascript:toggleBibtex('xu2022exemplar')" class="textlink">[BibTeX]</a>
