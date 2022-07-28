@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jin-Fan Hu
+title: Jinfan Hu
 comments: true
 permalink: /homepage/
 ---
