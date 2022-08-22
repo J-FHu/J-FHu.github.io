@@ -58,6 +58,8 @@ function toggleBibtex(articleid) {
 * [08/2022] 一篇论文被ECCVW录用。
 * [08/2022] 我们提出的UDC-UNet在[ECCV MIPI 2022](http://mipi-challenge.org/)UDC图像修复挑战中获得第二名。
 
+---
+
 ### 发表文章
 
 <!-- **已接收**
