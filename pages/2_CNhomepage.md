@@ -143,8 +143,9 @@ function toggleBibtex(articleid) {
 </pre>
 </div>
 <p align="left">
-<small>(<sup>*</sup> 共同第一作者)</small>
+<small>( * 共同第一作者)</small>
 </p>
+
 <!-- **审稿中**
 
 * Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**.
