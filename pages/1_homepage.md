@@ -170,6 +170,8 @@ function toggleBibtex(articleid) {
 ---
 
 ### Honors and Awards
+* 2nd Place, ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration, 2022
+
 * National Scholarship, UESTC, 2021
 
 * Academic Scholarship, UESTC, 2020 and 2021
