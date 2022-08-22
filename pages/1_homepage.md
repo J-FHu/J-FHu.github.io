@@ -64,7 +64,7 @@ function toggleBibtex(articleid) {
 
 **Accepted**
 
-* X. Liu*, **J. Hu***, X. Chen and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022.
+* X. Liu<sup>*</sup>, **J. Hu**<sup>*</sup>, X. Chen and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022.
 
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022.
 
@@ -145,7 +145,7 @@ function toggleBibtex(articleid) {
 </div>
 
 <p align="left">
-<small>(* Equal contributions)</small>
+<small>(<sup>*</sup> Equal contributions)</small>
 </p>
 <!-- **Under Review** -->
 
