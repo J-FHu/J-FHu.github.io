@@ -157,8 +157,7 @@ function toggleBibtex(articleid) {
 ---
 
 ### 个人经历 
-* 09/2022-至今: 计算机应用技术博士（导师：[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)）；[深圳先进技术研究院](https://www.siat.ac.cn/)），[中国科学院大学]
-*(https://www.ucas.ac.cn/)
+* 09/2022-至今: 计算机应用技术博士（导师：[董超副研究员](http://xpixel.group/2010/01/20/chaodong.html)）；[深圳先进技术研究院](https://www.siat.ac.cn/)），[中国科学院大学](https://www.ucas.ac.cn/)
 
 * 09/2019-06/2022: 数学硕士（导师：[黄廷祝教授](http://www.math.uestc.edu.cn/info/1081/2041.htm)和[邓良剑研究员](https://liangjiandeng.github.io/)）；电子科技大学（[UESTC](https://www.uestc.edu.cn/)）
 
