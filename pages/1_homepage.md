@@ -62,7 +62,7 @@ function toggleBibtex(articleid) {
 
 ### Publications
 
-**Accepted**
+<!-- **Accepted** -->
 
 * X. Liu<sup>*</sup>, **J. Hu**<sup>*</sup>, X. Chen and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022.
 
