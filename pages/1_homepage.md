@@ -161,11 +161,11 @@ function toggleBibtex(articleid) {
 
 ### Experiences 
 
-* 09/2022-present: Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), University of Chinese Academy of Sciences ([UCAS](https://www.ucas.ac.cn/)); Ph.D. student in Computer Science. (Supervisor: Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html))
+* 09/2022-present: Ph.D. student in Computer Science. (Supervisor: Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html)); Shenzhen Institutes of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), University of Chinese Academy of Sciences ([UCAS](https://www.ucas.ac.cn/))
 
-* 09/2019-06/2022: University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)); Master student in Mathematics. (Supervisor: Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/))
+* 09/2019-06/2022: Master student in Mathematics. (Supervisor: Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)); University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/))
 
-* 09/2015-06/2019: University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)); Bachelor student in Information and Computing Science.
+* 09/2015-06/2019: Bachelor student in Information and Computing Science; University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)); 
 
 ---
 
