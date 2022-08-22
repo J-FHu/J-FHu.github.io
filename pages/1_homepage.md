@@ -57,7 +57,6 @@ function toggleBibtex(articleid) {
 
 * [08/2022] One paper was accepted to ECCVW 2022.
 * [08/2022] Our method UDC-UNet won the 2nd place in ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration.
-* [06/2022] Check out the [XPixel Metaverse](http://xpixel.group/2022/06/06/Metaverse.html)!
 
 ### Publications
 
