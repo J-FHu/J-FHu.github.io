@@ -66,6 +66,8 @@ function toggleBibtex(articleid) {
 
 * X. Liu<sup>*</sup>, **J. Hu**<sup>*</sup>, X. Chen and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022.
 
+* Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, 2022.
+
 * **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022.
 
 
