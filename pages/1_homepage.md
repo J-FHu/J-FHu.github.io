@@ -172,15 +172,15 @@ function toggleBibtex(articleid) {
 ---
 
 ### Honors and Awards
-* 2nd Place, ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration, 2022
+* 2nd Place in ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration, 2022
 
-* National Scholarship, UESTC, 2021
+* National Scholarship, 2021
 
-* Academic Scholarship, UESTC, 2020 and 2021
+* Academic Scholarship, 2020 and 2021
 
-* National First Prize of [CUMCM](http://www.mcm.edu.cn/), UESTC, 2017
+* National First Prize of [CUMCM](http://www.mcm.edu.cn/), 2017
 
-* People Scholarship, UESTC, 2017 and 2018
+* People Scholarship, 2017 and 2018
 
 ---
 
