@@ -2,7 +2,7 @@
 layout: page
 title: CV of failures
 comments: true
-permalink: /about/
+permalink: CV of failures
 ---
 
 * content
