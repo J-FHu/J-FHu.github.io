@@ -56,7 +56,7 @@ function toggleBibtex(articleid) {
 
 ### 最新消息
 * [08/2022] 一篇论文被ECCVW录用。
-* [08/2022] 我们在[ECCV MIPI 2022](http://mipi-challenge.org/)UDC图像修复挑战中获得第二名。
+* [08/2022] 我们在[ECCV MIPI 2022](http://mipi-challenge.org/)屏下图像修复挑战中获得第二名。
 
 ---
 
@@ -168,7 +168,7 @@ function toggleBibtex(articleid) {
 ---
 
 ### 荣誉奖励
-* 2022年在[ECCV MIPI 2022](http://mipi-challenge.org/)UDC图像修复挑战中获得第二名。
+* 2022年在[ECCV MIPI 2022](http://mipi-challenge.org/)屏下图像修复挑战中获得第二名。
 
 * 2021年获得硕士生国家奖学金。
 
