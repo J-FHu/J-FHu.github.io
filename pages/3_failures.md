@@ -27,12 +27,12 @@ permalink: /CV of failures/
 ### 2021 
 * One paper rejected by International Conference on Computer Vision (ICCV) 2021.
 * One paper rejected by IEEE Transactions on Image Processing (TIP).
-* Failed to get a Ph.D. position at University of Electronic Science and Technology of China.
+* Failed to obtain a Ph.D. position at University of Electronic Science and Technology of China.
 
 ---
 
 ### 2022
-* Failed to get a Ph.D. position at Sun Yat-sen University.
-* Failed to obtain the outstanding graduate of Sichuan province.
+* Failed to obtain a Ph.D. position at Sun Yat-sen University.
+* Failed to get the outstanding graduate of Sichuan province award.
 
 ---
