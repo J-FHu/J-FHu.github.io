@@ -197,9 +197,10 @@ Peer-Reviewer:
 
 ### CV of Failures
 
-| <br>**Success is only an occasional event, failure is the norm in life.** This part is motivated by the paper A CV of failures published in &laquo;Nature&raquo;.
-<br>| &emsp;![image](https://J-FHu.github.io/images/iceberg.jpg)&emsp; |
+| <br>**Success is only an occasional event, failure is the norm in life.** This part is motivated by the paper _A CV of failures_ published in &laquo;Nature&raquo;. <br><br>| &emsp;![image](https://J-FHu.github.io/images/iceberg.jpg)&emsp; |
 
+<!-- | <br>**Success is only an occasional event, failure is the norm in life.** This part is motivated by the paper _A CV of failures_ published in &laquo;Nature&raquo;.
+<br>| &emsp;![image](https://J-FHu.github.io/images/iceberg.jpg)&emsp; | -->
 
 ---
 
