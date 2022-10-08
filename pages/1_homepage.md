@@ -195,6 +195,12 @@ Peer-Reviewer:
 
 ---
 
+### CV of Failures
+
+Success is only an occasional event, failure is the norm in life. This is motivated by **A CV of failures** published in &laquo;Nature&raquo;.
+
+---
+
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=573geowbknl&amp;m=7&amp;c=ffc000&amp;cr1=ffffff&amp;f=arial&amp;l=1&amp;s=170&amp;bv=70" async="async"></script>
 
 
