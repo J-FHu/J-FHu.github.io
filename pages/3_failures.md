@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV of failures
+title: CV of Failures
 comments: true
 permalink: /CV of failures/
 ---
