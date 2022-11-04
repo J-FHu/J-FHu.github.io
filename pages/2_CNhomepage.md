@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 胡锦帆
-comments: true
+comments: false
 permalink: /CNhomepage/
 ---
 
