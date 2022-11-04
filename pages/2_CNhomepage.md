@@ -1,9 +1,9 @@
----
-
+<!-- ---
+layout: page
 title: 胡锦帆
 comments: false
 permalink: /CNhomepage/
----
+--- -->
 
 * content
 {:toc}
