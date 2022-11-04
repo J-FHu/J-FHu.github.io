@@ -55,7 +55,7 @@ function toggleBibtex(articleid) {
 
 ### News
 
-* [11/2022] I joined the editor board of &laquo;Frontiers in Remote Sensing&raquo; as a reviewer editor.
+* [11/2022] I joined the editor board of &laquo;Frontiers in Remote Sensing&raquo; as a review editor.
 * [08/2022] One paper was accepted to ECCVW 2022.
 * [08/2022] We won 2nd place in ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration.
 
@@ -187,7 +187,7 @@ function toggleBibtex(articleid) {
 
 ### Academic Activities
 
-Reviewer Editor:
+Review Editor:
 * Frontiers in Remote Sensing
 
 Peer-Reviewer: 
