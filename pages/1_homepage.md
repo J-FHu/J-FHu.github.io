@@ -118,7 +118,7 @@ function toggleBibtex(articleid) {
 
 
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. ((<span style="color:red">ESI Highly Cited</span>)) [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
 <div id="bib_Wu2021VO" class="BibTeX noshow">
 <pre>
 @ARTICLE{Wu2021VO,
