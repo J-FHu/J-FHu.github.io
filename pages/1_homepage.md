@@ -152,12 +152,6 @@ function toggleBibtex(articleid) {
 </p>
 <!-- **Under Review** -->
 
-
-
-  -->
-
-
-
 ---
 
 ### Experiences 
