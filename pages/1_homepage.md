@@ -183,6 +183,8 @@ Review Editor:
 * Frontiers in Remote Sensing
 
 Peer-Reviewer: 
+* IEEE Transactions on Cybernetics (IEEE TCYB)
+  
 * IEEE Transactions on Geoscience And Remote Sensing (IEEE TGRS)
 
 * IEEE Geoscience and Remote Sensing Letters (IEEE GRSL)
