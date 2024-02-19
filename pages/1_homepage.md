@@ -53,14 +53,14 @@ function toggleBibtex(articleid) {
  
 | <br>**Jinfan Hu** is pursuing his Ph.D. degree in [XPixel Group](http://xpixel.group/index.html), Shenzhen Institute of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)), Shenzhen, China. He is now supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) from the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China in 2019 and 2022. His research interests include image processing and deep learning. <br> <br> **Email:** <jf.hu1@siat.ac.cn> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br>| &emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp; |
 
-### News
+### 🔥 News
 
 * [08/2022] One paper was accepted to ECCVW 2022.
 * [08/2022] We won 2nd place in ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration.
 
 ---
 
-### Publications
+### 📝 Publications
 
 <!-- **Accepted** -->
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023.
@@ -154,7 +154,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Experiences 
+### 📖 Experiences 
 
 * 09/2022-present: Ph.D. student in computer science. (Supervisor: Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html)); Shenzhen Institute of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), University of Chinese Academy of Sciences ([UCAS](https://www.ucas.ac.cn/))
 
@@ -164,7 +164,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Honors and Awards
+### 🎖 Honors and Awards
 * 2nd Place in ECCV [MIPI 2022 Challenge](http://mipi-challenge.org/) on UDC image restoration, 2022
 
 * National Scholarship, 2021
@@ -177,7 +177,7 @@ function toggleBibtex(articleid) {
 
 ---
 
-### Academic Activities
+### 💬 Academic Activities
 
 Review Editor:
 * Frontiers in Remote Sensing
