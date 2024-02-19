@@ -1,7 +1,7 @@
 <!-- ---
 layout: page
 title: CV of Failures
-comments: true
+comments: false
 permalink: /CV of failures/
 --- -->
 
