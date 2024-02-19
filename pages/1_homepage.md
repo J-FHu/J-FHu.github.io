@@ -55,9 +55,7 @@ function toggleBibtex(articleid) {
 
 ### 🔥 News
 
-[01/2024] 🎉🎉🎉A groundbreaking image restoration method that harnesses generative prior and the power of model scaling up ([SUPIR](https://supir.xpixel.group/)) is released. 🎉🎉🎉
-
-&emsp;![image](https://github.com/J-FHu/J-FHu.github.io/blob/main/images/teaser.png)&emsp;
+| [01/2024] 🎉🎉🎉A groundbreaking image restoration method that harnesses generative prior and the power of model scaling up ([SUPIR](https://supir.xpixel.group/)) is released. 🎉🎉🎉 |&emsp;![image](https://github.com/J-FHu/J-FHu.github.io/blob/main/images/teaser.png)&emsp;|
 ---
 
 ### 📝 Publications
