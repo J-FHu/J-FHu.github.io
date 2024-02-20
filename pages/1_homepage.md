@@ -171,11 +171,11 @@ function toggleBibtex(articleid) {
 
 * National Scholarship, 2021
 
-* Academic Scholarship, 2020 and 2021
+<!-- * Academic Scholarship, 2020 and 2021 -->
 
 * National First Prize of [CUMCM](http://www.mcm.edu.cn/), 2017
 
-* People Scholarship, 2017 and 2018
+<!-- * People Scholarship, 2017 and 2018  -->
 
 ---
 
