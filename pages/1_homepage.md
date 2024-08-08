@@ -55,7 +55,7 @@ function toggleBibtex(articleid) {
 
 ### 🔥 News
 
-* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method for low-level vision models ([CEM](https://arxiv.org/abs/2407.19789)), which brings causality analysis in LV for the first time. 🎉🎉🎉
+* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in LV for the first time. 🎉🎉🎉
 &emsp;![image](https://J-FHu.github.io/images/teaser_CEM.png)&emsp;
 * [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. 🎉🎉🎉 
 &emsp;![image](https://J-FHu.github.io/images/teaser.png)&emsp;
