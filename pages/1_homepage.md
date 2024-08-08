@@ -51,19 +51,23 @@ function toggleBibtex(articleid) {
 	
 ### 📚 Biography
  
-| <br>**Jinfan Hu** is pursuing his Ph.D. degree in [XPixel Group](http://xpixel.group/index.html), Shenzhen Institute of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)). He is now supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) from the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China in 2019 and 2022. His research interests include low-level computer vision and AI interpretability. <br> <br> **Email:** <jf.hu1@siat.ac.cn> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br> |&emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp;|
+| <br>**Jinfan Hu** is pursuing his Ph.D. degree in [XPixel Group](http://xpixel.group/index.html), Shenzhen Institute of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)). He is now supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) from the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China in 2019 and 2022. His research interests include low-level vision (LV) and AI interpretability. <br> <br> **Email:** <jf.hu1@siat.ac.cn> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br> |&emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp;|
 
 ### 🔥 News
 
-[01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. 🎉🎉🎉 
+* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method for low-level vision models ([CEM](https://arxiv.org/abs/2407.19789)), which brings causality analysis in LV for the first time. 🎉🎉🎉
+&emsp;![image](https://J-FHu.github.io/images/teaser_CEM.png)&emsp;
+* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. 🎉🎉🎉 
 &emsp;![image](https://J-FHu.github.io/images/teaser.png)&emsp;
 
 ---
 
 ### 📝 Publications
 
+* **J. Hu**, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. arXiv, 2024. ([PDF](https://arxiv.org/abs/2407.19789))
+
 * F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024.
-  [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)].
+  [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
   
 * R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>)
 
