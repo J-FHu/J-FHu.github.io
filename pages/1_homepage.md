@@ -185,18 +185,18 @@ function toggleBibtex(articleid) {
 
 ### 💬 Academic Activities
 
-Review Editor:
-* Frontiers in Remote Sensing
-
 Peer-Reviewer: 
-* IEEE Transactions on Cybernetics (IEEE TCYB)
+* IEEE Transactions on Pattern Analysis and Machine Intelligence
+
+* IEEE Transactions on Cybernetics
   
-* IEEE Transactions on Geoscience And Remote Sensing (IEEE TGRS)
+* IEEE Transactions on Geoscience And Remote Sensing
 
-* IEEE Geoscience and Remote Sensing Letters (IEEE GRSL)
+* IEEE Geoscience and Remote Sensing Letters
 
-* IEEE Transactions on Computational Imaging (IEEE TCI)
-
+* IEEE Transactions on Computational Imaging
+  
+* ...
 ---
 
 <!-- ### CV of Failures
