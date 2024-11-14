@@ -205,7 +205,7 @@ Peer-Reviewer:
 
 --- -->
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=5Tnjvlx4pwYiXFQMdiOgvLHFKUuOMdlwnkZD9DMfS6c'></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=5Tnjvlx4pwYiXFQMdiOgvLHFKUuOMdlwnkZD9DMfS6c'></script>
 
 
 
