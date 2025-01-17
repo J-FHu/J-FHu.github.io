@@ -75,8 +75,7 @@ function toggleBibtex(articleid) {
 
 * Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang, and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, 2022.
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022.
-
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022. (<span style="color:red">ESI Highly Cited</span>)
 
 * S. Peng, L.-J. Deng, **J.-F. Hu**, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
 <a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a>
@@ -125,7 +124,7 @@ function toggleBibtex(articleid) {
 
 
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. (<span style="color:red"><del>ESI Highly Cited</del></span>) [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
 <div id="bib_Wu2021VO" class="BibTeX noshow">
 <pre>
 @ARTICLE{Wu2021VO,
