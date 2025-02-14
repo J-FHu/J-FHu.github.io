@@ -60,7 +60,7 @@ function toggleBibtex(articleid) {
     <img src="https://J-FHu.github.io/images/Book.png" width="500px">
   </div>
 
-* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in LV for the first time! 🎉🎉🎉  
+* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in the field! 🎉🎉🎉  
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="500px">
   </div>
