@@ -55,12 +55,36 @@ function toggleBibtex(articleid) {
 
 ### 🔥 Headline
 
-* [02/2025] 🎉🎉🎉 The book 《底层视觉之美》, co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉 
-&emsp;![image](https://J-FHu.github.io/images/Book.png)&emsp;
-* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in LV for the first time! 🎉🎉🎉
-&emsp;![image](https://J-FHu.github.io/images/teaser_CEM.png)&emsp;
-* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up! 🎉🎉🎉 
-&emsp;![image](https://J-FHu.github.io/images/teaser.png)&emsp;
+* [02/2025] 
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 20px;">
+      🎉🎉🎉 The book *《底层视觉之美》*, co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉  
+    </div>
+    <div style="flex: 0 0 500px;">
+      <img src="https://J-FHu.github.io/images/Book.png" width="500px">
+    </div>
+  </div>
+
+* [07/2024] 
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 20px;">
+     🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in LV for the first time! 🎉🎉🎉  
+    </div>
+    <div style="flex: 0 0 500px;">
+      <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="500px">
+    </div>
+  </div>
+
+* [01/2024] 
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="flex: 1; padding-right: 20px;">
+      🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up! 🎉🎉🎉  
+    </div>
+    <div style="flex: 0 0 500px;">
+      <img src="https://J-FHu.github.io/images/teaser.png" width="500px">
+    </div>
+  </div>
+
 
 ---
 
