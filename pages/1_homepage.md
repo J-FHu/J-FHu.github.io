@@ -57,17 +57,17 @@ function toggleBibtex(articleid) {
 
 * [02/2025] 🎉🎉🎉 The book *《底层视觉之美》*, co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉  
   <div style="text-align: center;">
-    <img src="https://J-FHu.github.io/images/Book.png" width="700px">
+    <img src="https://J-FHu.github.io/images/Book.png" width="600px">
   </div>
 
 * [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, which brings causality analysis in the field! 🎉🎉🎉  
   <div style="text-align: center;">
-    <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="700px">
+    <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="600px">
   </div>
 
 * [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up! 🎉🎉🎉  
   <div style="text-align: center;">
-    <img src="https://J-FHu.github.io/images/teaser.png" width="700px">
+    <img src="https://J-FHu.github.io/images/teaser.png" width="600px">
   </div>
 
 
