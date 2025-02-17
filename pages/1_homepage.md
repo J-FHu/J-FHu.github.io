@@ -53,7 +53,7 @@ function toggleBibtex(articleid) {
  
 | <br>**Jinfan Hu** is pursuing his Ph.D. degree in [XPixel Group](http://xpixel.group/index.html), Shenzhen Institute of Advanced Technology ([SIAT](https://www.siat.ac.cn/)), Chinese Academy of Sciences ([CAS](https://english.cas.cn/index.shtml)). He is now supervised by Prof. [Chao Dong](http://xpixel.group/2010/01/20/chaodong.html). He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. [Ting-Zhu Huang](http://www.math.uestc.edu.cn/info/1081/2041.htm) and Prof. [Liang-Jian Deng](https://liangjiandeng.github.io/)) from the University of Electronic Science and Technology of China ([UESTC](https://www.uestc.edu.cn/)), Chengdu, China in 2019 and 2022. His research interests include low-level vision (LV) and AI interpretability. <br> <br> **Email:** <jf.hu1@siat.ac.cn> <br> **Follow Me:** [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ) &emsp; [Github](https://github.com/J-FHu) <br><br> |&emsp;![image](https://J-FHu.github.io/images/Hu.jpg)&emsp;|
 
-### 🔥 Headline
+### 🔥 Headlines
 
 * [02/2025] 🎉🎉🎉 The book *《底层视觉之美》*, co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉  
   <div style="text-align: center;">
