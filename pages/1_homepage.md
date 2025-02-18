@@ -78,7 +78,7 @@ function toggleBibtex(articleid) {
 
 _**Book**_
 
-* C. Dong, **J. Hu**, [《底层视觉之美》](https://item.jd.com/10137558708716.html) (The Beauty of Low-level Vision), 2025
+* C. Dong, **J. Hu**, [《底层视觉之美》](https://item.jd.com/10137558708716.html) (The Beauty of Low-level Vision), 2025.
 
 _**Paper**_
 
