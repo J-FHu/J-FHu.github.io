@@ -55,7 +55,7 @@ function toggleBibtex(articleid) {
 
 ### 🔥 Headlines
 
-* [02/2025] 🎉🎉🎉 The book *《底层视觉之美》*, co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉  
+* [02/2025] 🎉🎉🎉 The book [*《底层视觉之美》* ](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published! 🎉🎉🎉  
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Book.png" width="400px">
   </div>
@@ -78,7 +78,7 @@ function toggleBibtex(articleid) {
 
 _**Book**_
 
-* C. Dong, **J. Hu**, 《底层视觉之美》 (The Beauty of Low-level Vision), 2025
+* C. Dong, **J. Hu**, [《底层视觉之美》](https://item.jd.com/10137558708716.html) (The Beauty of Low-level Vision), 2025
 
 _**Paper**_
 
