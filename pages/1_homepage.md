@@ -92,7 +92,7 @@ _**Paper**_
 
 * F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024. [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
   
-* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>) [[Code](https://github.com/Evangelion09/GuidedNet)][[PDF](https://ieeexplore.ieee.org/abstract/document/10035506/)]
+* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics (TCYB)_**, 2023. (<span style="color:red">ESI Highly Cited</span>) [[Code](https://github.com/Evangelion09/GuidedNet)][[PDF](https://ieeexplore.ieee.org/abstract/document/10035506/)]
 
 * X. Liu<sup>\*</sup>, **J. Hu<sup>\*</sup>**, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022. [[Code](https://github.com/J-FHu/UDCUNet)][[PDF](https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8)]
 
@@ -103,11 +103,11 @@ _**Paper**_
 
 * S. Peng, L.-J. Deng, **J.-F. Hu**, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. [[Code](https://github.com/liangjiandeng/ADKNet)][[PDF](https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf)]
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021. (<span style="color:red">ESI Highly Cited</span>) [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems (TNNLS)_**, 2021. (<span style="color:red">ESI Highly Cited</span>) [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]
 
 * T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021. [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S1047320321002893)]
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing (TGRS)_**, 2021. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]
 
 * Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, **J.-F. Hu**, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, vol. 13, pp. 6277-6290, 2020. [[Project page](https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html)][[PDF](https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf)]
 
