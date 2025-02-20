@@ -55,7 +55,7 @@ function toggleBibtex(articleid) {
 
 ### 🔥 Headlines
 
-* [02/2025] 🎉🎉🎉 We revisit the generalization problem in low-level vision models in this [paper](https://arxiv.org/abs/2502.12600). We demonstrate that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation! 
+* [02/2025] 🎉🎉🎉 We revisit the generalization problem of low-level vision models in this [paper](https://arxiv.org/abs/2502.12600). We demonstrate that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation! 
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Real_compare.png" width="700px">
   </div>
