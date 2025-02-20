@@ -90,97 +90,34 @@ _**Paper**_
   
 * **J. Hu**, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. arXiv, 2024. [[Code](https://github.com/J-FHu/CEM)][[PDF](https://arxiv.org/abs/2407.19789)]
 
-* F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024.
-  [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
+* F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024. [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
   
-* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>)
+* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>) [[PDF](https://ieeexplore.ieee.org/abstract/document/10035506/)]
 
-* X. Liu<sup>\*</sup>, **J. Hu<sup>\*</sup>**, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022.
+* X. Liu<sup>\*</sup>, **J. Hu<sup>\*</sup>**, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022. [[Code](https://github.com/J-FHu/UDCUNet)][[PDF](https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8)]
 
-* Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang, and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, 2022.
+* Y.-W. Zhuo, T.-J. Zhang, **J.-F. Hu**, H.-X. Dou, T.-Z. Huang, and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, 2022. [[PDF](https://ieeexplore.ieee.org/abstract/document/9870551)]
 
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022. (<span style="color:red">ESI Highly Cited</span>) [[Code](https://github.com/J-FHu/Fusformer)]
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. **_IEEE Geoscience and Remote Sensing Letters_**, 2022. (<span style="color:red">ESI Highly Cited</span>) [[Code](https://github.com/J-FHu/Fusformer)][[PDF](https://ieeexplore.ieee.org/abstract/document/9841513)]
 
-* S. Peng, L.-J. Deng, **J.-F. Hu**, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. 
-<a href="javascript:toggleBibtex('pengijcai2022')" class="textlink">[BibTeX]</a>
-<div id="bib_pengijcai2022" class="BibTeX noshow">
-<pre>
-@ARTICLE{pengijcai2022,
-	author={S. Peng, L.-J. Deng, J.-F. Hu, and Y.-W. Zhuo},
-	journal={International Joint Conferences on Artificial Intelligence (IJCAI)}, 
-	title={Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening}, 
-	year={2022},
-	volume={},
-	number={},
-	pages={},
-	doi={}
-   }
-</pre>
-</div>   
+* S. Peng, L.-J. Deng, **J.-F. Hu**, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. **_International Joint Conferences on Artificial Intelligence (IJCAI)_**, 2022. [[PDF](https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf)]
 
-* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. (<span style="color:red">ESI Highly Cited</span>) [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]<a href="javascript:toggleBibtex('Hutnnls')" class="textlink">[BibTeX]</a>
-<div id="bib_Hutnnls" class="BibTeX noshow">
-<pre>
-@ARTICLE{Hutnnls,
-	author={Hu, Jin-Fan and Huang, Ting-Zhu and Deng, Liang-Jian and Jiang, Tai-Xiang and Vivone, Gemine and Chanussot, Jocelyn},
-	journal={IEEE Transactions on Neural Networks and Learning Systems}, 
-	title={Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks}, 
-	year={2021},
-	doi={10.1109/TNNLS.2021.3084682}
-   }
-</pre>
-</div>
+* **J.-F. Hu**, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. **_IEEE Transactions on Neural Networks and Learning Systems_**, 2021, doi: 10.1109/TNNLS.2021.3084682. (<span style="color:red">ESI Highly Cited</span>) [[Project Page](https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html)][[PDF](https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf)]
 
-* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021.
-<a href="javascript:toggleBibtex('xu2022exemplar')" class="textlink">[BibTeX]</a>
-<div id="bib_xu2022exemplar" class="BibTeX noshow">
-<pre>
-@article{xu2022exemplar,
-  title={Exemplar-based image inpainting using adaptive two-stage structure-tensor based priority function and nonlocal filtering},
-  author={Xu, Ting and Huang, Ting-Zhu and Deng, Liang-Jian and Zhao, Xi-Le and Hu, Jin-Fan},
-  journal={Journal of Visual Communication and Image Representation},
-  pages={103430},
-  year={2022},
-  publisher={Elsevier}
-}
-</pre>
-</div>
+* T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and **J.-F. Hu**. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. **_Journal of Visual Communication and Image Representation_**, 2021. [[PDF](https://www.sciencedirect.com/science/article/abs/pii/S1047320321002893)]
 
 
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]<a href="javascript:toggleBibtex('Wu2021VO')" class="textlink">[BibTeX]</a>
-<div id="bib_Wu2021VO" class="BibTeX noshow">
-<pre>
-@ARTICLE{Wu2021VO,
-	author={Z.-C. Wu and T.-Z. Huang and L.-J. Deng and J.-F. Hu and G. Vivone},
-	journal={IEEE Transactions on Geoscience and Remote Sensing},
-	title={VO+Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening},
-	year={2021},
-	doi={10.1109/TGRS.2021.3066425}
-   }
-</pre>
-</div>
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, **J.-F. Hu**, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, vol. 13, pp. 6277-6290, 2020. [[Project page](https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html)][[PDF](https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf)]<a href="javascript:toggleBibtex('Wu')" class="textlink">[BibTeX]</a>
-<div id="bib_Wu" class="BibTeX noshow">
-<pre>
-@ARTICLE{Wu,  
-  title={A new variational approach based on proximal deep injection and gradient intensity similarity for spatio-spectral image fusion},
-   author={Wu, Zhong-Cheng and Huang, Ting-Zhu and Deng, Liang-Jian and Vivone, Gemine and Miao, Jia-Qing and Hu, Jin-Fan and Zhao, Xi-Le},
-   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-   volume={13},
-   pages={6277--6290},
-   year={2020},
-   publisher={IEEE}
-   }
-</pre>
-</div>
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing_**, 2021, doi: 10.1109/TGRS.2021.3066425. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]
+
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, **J.-F. Hu**, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, vol. 13, pp. 6277-6290, 2020. [[Project page](https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html)][[PDF](https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf)]
 
 <p align="left">
 <small>(<sup>*</sup> Equal contributions)</small>
 </p>
-<!-- **Under Review** -->
+
 
 ---
 
