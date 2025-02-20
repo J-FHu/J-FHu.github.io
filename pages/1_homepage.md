@@ -60,7 +60,7 @@ function toggleBibtex(articleid) {
     <img src="https://J-FHu.github.io/images/Real_compare.png" width="700px">
   </div>
 
-* [02/2025] 🎉🎉🎉 The book [*《底层视觉之美》* ](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the field!
+* [02/2025] 🎉🎉🎉 The book [《底层视觉之美》](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the field!
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Book.png" width="400px">
   </div>
