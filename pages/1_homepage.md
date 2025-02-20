@@ -92,7 +92,7 @@ _**Paper**_
 
 * F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024. [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
   
-* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>) [[PDF](https://ieeexplore.ieee.org/abstract/document/10035506/)]
+* R. Ran, L.-J. Deng, T.-X. Jiang, **J.-F. Hu**, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. **_IEEE Transactions on Cybernetics_**, 2023. (<span style="color:red">ESI Highly Cited</span>) [[Code](https://github.com/Evangelion09/GuidedNet)][[PDF](https://ieeexplore.ieee.org/abstract/document/10035506/)]
 
 * X. Liu<sup>\*</sup>, **J. Hu<sup>\*</sup>**, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. **_European Conference on Computer Vision Workshop (ECCVW)_**, 2022. [[Code](https://github.com/J-FHu/UDCUNet)][[PDF](https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8)]
 
