@@ -55,22 +55,22 @@ function toggleBibtex(articleid) {
 
 ### 🔥 Headlines
 
-* [02/2025] 🎉🎉🎉 We revisit the generalization problem in low-level vision models in this [paper](https://arxiv.org/abs/2502.12600). We demonstrate that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation. 🎉🎉🎉  
+* [02/2025] 🎉🎉🎉 We revisit the generalization problem in low-level vision models in this [paper](https://arxiv.org/abs/2502.12600). We demonstrate that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation! 
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Real_compare.png" width="700px">
   </div>
 
-* [02/2025] 🎉🎉🎉 The book [*《底层视觉之美》* ](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the field! 🎉🎉🎉  
+* [02/2025] 🎉🎉🎉 The book [*《底层视觉之美》* ](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the field!
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Book.png" width="400px">
   </div>
 
-* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models! 🎉🎉🎉  
+* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models! 
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="700px">
   </div>
 
-* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. We believe this method will provide valuable insights and improved performance for real-world image restoration tasks! 🎉🎉🎉  
+* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. We believe this method will provide valuable insights and improved performance for real-world image restoration tasks!
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/teaser.png" width="700px">
   </div>
