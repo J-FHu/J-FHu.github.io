@@ -109,7 +109,7 @@ _**Paper**_
 
 * Z.-C. Wu, T.-Z. Huang, L.-J. Deng, **J.-F. Hu**, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. **_IEEE Transactions on Geoscience and Remote Sensing (TGRS)_**, 2021. [[Project page](https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html)][[PDF](https://liangjiandeng.github.io/papers/2021/VOFF.pdf)]
 
-* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, **J.-F. Hu**, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, vol. 13, pp. 6277-6290, 2020. [[Project page](https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html)][[PDF](https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf)]
+* Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, **J.-F. Hu**, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. **_IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing_**, 2020. [[Project page](https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html)][[PDF](https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf)]
 
 <p align="left">
 <small>(<sup>*</sup> Equal contributions)</small>
