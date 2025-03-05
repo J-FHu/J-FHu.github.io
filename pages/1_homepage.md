@@ -166,10 +166,10 @@ Peer-Reviewer:
     <style>
         .float-box {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
             cursor: pointer;
             z-index: 1000;
             /* 移除动画相关代码 */
@@ -214,7 +214,7 @@ Peer-Reviewer:
     <div class="float-box" id="floatBox">
         <div class="close-btn" id="closeBtn">×</div>
         <a href="https://item.jd.com/10137558708716.html" target="_blank">
-            <img src="https://J-FHu.github.io/images/icon.png" 
+            <img src="https://J-FHu.github.io/images/bookicon.jpg" 
                  alt="京东商品" 
                  class="float-image">
         </a>
