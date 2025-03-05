@@ -160,4 +160,71 @@ Peer-Reviewer:
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=5Tnjvlx4pwYiXFQMdiOgvLHFKUuOMdlwnkZD9DMfS6c'></script>
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .float-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+            /* 移除动画相关代码 */
+        }
 
+        .close-btn {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            width: 18px;
+            height: 18px;
+            background: #ff4444;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 18px;
+            font-size: 12px;
+            font-family: Arial;
+            cursor: pointer;
+            z-index: 1001;
+            transition: background 0.3s;
+        }
+
+        .close-btn:hover {
+            background: #cc0000;
+        }
+
+        .float-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .float-image:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="float-box" id="floatBox">
+        <div class="close-btn" id="closeBtn">×</div>
+        <a href="https://item.jd.com/10137558708716.html" target="_blank">
+            <img src="https://J-FHu.github.io/images/icon.png" 
+                 alt="京东商品" 
+                 class="float-image">
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('closeBtn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.getElementById('floatBox').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
