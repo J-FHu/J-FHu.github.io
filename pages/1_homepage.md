@@ -167,9 +167,9 @@ Peer-Reviewer:
         .float-box {
             position: fixed;
             bottom: 50px;
-            right: 50px;
-            width: 100px;
-            height: 100px;
+            right: 20px;
+            width: 150px;
+            height: 150px;
             cursor: pointer;
             z-index: 1000;
             /* 移除动画相关代码 */
