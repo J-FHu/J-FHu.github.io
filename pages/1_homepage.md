@@ -87,6 +87,8 @@ _**Book**_
 
 _**Paper**_
 * **J. Hu<sup>\*</sup>**,  Z. You<sup>\*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. arXiv, 2025. [[PDF](https://arxiv.org/abs/2502.12600)]
+
+* F. Yu, J. Gu, **J. Hu**, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. **_International Conference on Learning Representations (ICLR)_**, 2025. [[PDF](https://openreview.net/forum?id=uJqKf24HGN)]
   
 * **J. Hu**, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. arXiv, 2024. [[Code](https://github.com/J-FHu/CEM)][[PDF](https://arxiv.org/abs/2407.19789)]
 
