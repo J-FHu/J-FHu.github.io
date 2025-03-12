@@ -60,7 +60,7 @@ function toggleBibtex(articleid) {
     <img src="https://J-FHu.github.io/images/Real_compare.png" width="700px">
   </div>
 
-* [02/2025] 🎉🎉🎉 The book [《底层视觉之美》](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the field!
+* [02/2025] 🎉🎉🎉 The book [《底层视觉之美》](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the Low-level Vision field!
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Book.png" width="400px">
   </div>
@@ -70,7 +70,7 @@ function toggleBibtex(articleid) {
     <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="700px">
   </div>
 
-* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://supir.xpixel.group/)) that harnesses generative prior and the power of model scaling up. We believe this method will provide valuable insights and improved performance for real-world image restoration tasks!
+* [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://arxiv.org/abs/2401.13627)) that harnesses generative prior and the power of model scaling up. Our method demonstrates unprecedented performance in real-world image restoration tasks! Experience the future of image restoration through our official platforms: [明犀AI](https://www.suppixel.cn/home) and [SupPixel AI](https://supir.suppixel.ai/home).
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/teaser.png" width="700px">
   </div>
@@ -117,6 +117,11 @@ _**Paper**_
 <small>(<sup>*</sup> Equal contributions)</small>
 </p>
 
+
+---
+
+### 📸 Products
+For a comprehensive exploration of our technologies, visit our official websites: [明犀AI](https://www.suppixel.cn/home) and [SupPixel AI](https://supir.suppixel.ai/home).
 
 ---
 
