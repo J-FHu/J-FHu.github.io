@@ -62,7 +62,7 @@ function toggleBibtex(articleid) {
 
 * [02/2025] 🎉🎉🎉 The book [《底层视觉之美》](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the Low-level Vision field!
   <div style="text-align: center;">
-    <img src="https://J-FHu.github.io/images/Book.png" width="400px">
+    <img src="https://J-FHu.github.io/images/book.jng" width="700px">
   </div>
 
 * [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models! 
