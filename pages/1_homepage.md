@@ -55,6 +55,11 @@ function toggleBibtex(articleid) {
 
 ### 🔥 Headlines
 
+* [03/2025] 🎉🎉🎉 One paper is accepted by TPAMI. We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models! 
+  <div style="text-align: center;">
+    <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="700px">
+  </div>
+  
 * [02/2025] 🎉🎉🎉 We revisit the generalization problem of low-level vision models in this [paper](https://arxiv.org/abs/2502.12600). We demonstrate that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation! 
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/Real_compare.png" width="700px">
@@ -63,11 +68,6 @@ function toggleBibtex(articleid) {
 * [02/2025] 🎉🎉🎉 The book [《底层视觉之美》](https://item.jd.com/10137558708716.html), co-authored with my supervisor Prof. Chao Dong, has been published. We hope this book provides valuable insights for researchers and enthusiasts in the Low-level Vision field!
   <div style="text-align: center;">
     <img src="https://J-FHu.github.io/images/book.jpg" width="700px">
-  </div>
-
-* [07/2024] 🎉🎉🎉 We propose a model/task-agnostic interpreting method ([CEM](https://arxiv.org/abs/2407.19789)) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models! 
-  <div style="text-align: center;">
-    <img src="https://J-FHu.github.io/images/teaser_CEM.png" width="700px">
   </div>
 
 * [01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method ([SUPIR](https://arxiv.org/abs/2401.13627)) that harnesses generative prior and the power of model scaling up. Our method demonstrates unprecedented performance in real-world image restoration tasks! Experience the future of image restoration through our official platforms: [明犀AI](https://www.suppixel.cn/home) and [SupPixel AI](https://supir.suppixel.ai/home).
@@ -86,11 +86,13 @@ _**Book**_
 * C. Dong, **J. Hu**, [《底层视觉之美》](https://item.jd.com/10137558708716.html) (The Beauty of Low-level Vision), 2025.
 
 _**Paper**_
+
+* **J. Hu**, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps.  **_IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)_**, 2025. [[Code](https://github.com/J-FHu/CEM)][[PDF](https://arxiv.org/abs/2407.19789)]
+  
 * **J. Hu<sup>\*</sup>**,  Z. You<sup>\*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. arXiv, 2025. [[PDF](https://arxiv.org/abs/2502.12600)]
 
 * F. Yu, J. Gu, **J. Hu**, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. **_International Conference on Learning Representations (ICLR)_**, 2025. [[PDF](https://openreview.net/forum?id=uJqKf24HGN)]
   
-* **J. Hu**, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. arXiv, 2024. [[Code](https://github.com/J-FHu/CEM)][[PDF](https://arxiv.org/abs/2407.19789)]
 
 * F. Yu, J. Gu, Z. Li, **J. Hu**, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. **_Conference on Computer Vision and Pattern Recognition (CVPR)_**, 2024. [[Project Page](https://supir.xpixel.group/)][[PDF](https://arxiv.org/abs/2401.13627)]
   
