@@ -813,11 +813,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentTheme = body.getAttribute('data-theme');
         if (currentTheme === 'light') {
           body.removeAttribute('data-theme');
-          localStorage.setItem('theme', 'dark');
           themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
         } else {
           body.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
           themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
         }
       });
