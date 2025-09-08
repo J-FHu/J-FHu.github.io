@@ -645,9 +645,11 @@
 }
 
 .toc-list {
-  list-style: none;
+  list-style: none; /* 显式声明无列表样式 */
   padding: 0;
   margin: 0;
+  /* 可选：为了更彻底，可以添加以下属性 */
+  counter-reset: toc-counter; /* 用于计数器，但这里不使用 */
 }
 
 .toc-item {
