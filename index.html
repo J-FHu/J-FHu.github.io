@@ -239,7 +239,7 @@
       border: 1px solid rgba(255, 107, 107, 0.3);
     }
 
-    /* Theme Toggle Button */
+/*     /* Theme Toggle Button */
     .theme-toggle {
       position: fixed;
       top: 20px;
@@ -262,7 +262,7 @@
     .theme-toggle:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    }
+    } */
 
     /* Publications Toggle */
     .pub-section-header {
@@ -426,6 +426,7 @@
     </header>
     
 <!-- 顶部固定导航栏 -->
+<!-- 顶部固定导航栏 -->
 <nav class="top-nav">
   <a href="#biography" class="top-nav-link">Biography</a>
   <a href="#headlines" class="top-nav-link">Headlines</a>
@@ -434,6 +435,10 @@
   <a href="#experiences" class="top-nav-link">Experiences</a>
   <a href="#honors" class="top-nav-link">Honors</a>
   <a href="#activities" class="top-nav-link">Activities</a>
+  <!-- 主题切换按钮 -->
+  <button class="theme-toggle-in-nav" id="themeToggle">
+    <i class="fas fa-moon"></i>
+  </button>
 </nav>
     
     <main>
@@ -628,6 +633,38 @@
   transition: var(--transition);
 }
 
+  /* ========== 顶部导航栏内的主题切换按钮 ========== */
+.theme-toggle-in-nav {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+  margin-left: auto; /* 关键：将按钮推到最右边 */
+}
+
+.theme-toggle-in-nav:hover {
+  color: var(--accent);
+  background: rgba(0, 200, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* 亮色模式下的按钮 */
+body[data-theme="light"] .theme-toggle-in-nav {
+  color: var(--text-secondary);
+}
+
+body[data-theme="light"] .theme-toggle-in-nav:hover {
+  color: var(--accent);
+  background: rgba(13, 110, 253, 0.1);
+}
+  
 body[data-theme="light"] .top-nav {
   background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid rgba(13, 110, 253, 0.2);
