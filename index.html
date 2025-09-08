@@ -800,7 +800,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const themeToggle = document.getElementById('themeToggle');
       const body = document.body;
 
-      const savedTheme = localStorage.getItem('theme') || 'light'; // 默认为 'light'
+      const savedTheme = 'light'; // 默认为 'light'
       if (savedTheme === 'light') {
         body.setAttribute('data-theme', 'light');
         themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
