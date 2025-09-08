@@ -18,6 +18,15 @@
       --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
+    [data-theme="light"] {
+      --primary-bg: #ffffff;
+      --secondary-bg: #f8f9fa;
+      --accent: #0d6efd;
+      --text-primary: #212529;
+      --text-secondary: #6c757d;
+      --card-bg: #f8f9fa;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -30,6 +39,7 @@
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       line-height: 1.7;
       overflow-x: hidden;
+      transition: var(--transition);
     }
 
     .container {
@@ -249,6 +259,60 @@
       border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
+    /* Theme Toggle Button */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card-bg);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      transition: var(--transition);
+      color: var(--text-primary);
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Publications Accordion */
+    .publications-section {
+      position: relative;
+    }
+
+    .publication-toggle {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      color: var(--accent);
+      cursor: pointer;
+      transition: var(--transition);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .publication-toggle:hover {
+      color: #ffffff;
+      border-bottom-color: var(--accent);
+    }
+
+    .publication-list {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    .publication-list.visible {
+      display: block;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -292,13 +356,18 @@
 </head>
 <body>
   <div class="container">
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </button>
+
     <header>
       <img src="https://J-FHu.github.io/images/Hu.jpg" alt="Jinfan Hu" class="profile-img" />
       <div class="bio">
         <h1>Jinfan Hu</h1>
         <p class="affiliation">
           Ph.D. Candidate @ <a href="https://www.siat.ac.cn/" target="_blank">SIAT, CAS</a> | Advised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><br>
-          Researching Low-level Vision & AI Interpretability. Formerly at <a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a> (B.S. & M.S. in Mathematics).<br><br>
+          Researching Low-level Vision & AI Interpretability.<br><br>
           <strong>Email:</strong> jf.hu1@siat.ac.cn<br>
           <strong>Follow Me:</strong> <a href="https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ" target="_blank">Google Scholar</a> &emsp; <a href="https://github.com/J-FHu" target="_blank">Github</a>
         </p>
@@ -347,55 +416,56 @@
       </section>
 
       <!-- Publications -->
-      <section>
-        <h2>📝 Publications</h2>
-        
-        <h3><em>Book</em></h3>
-        <div class="pub-item">
-          <p>C. Dong, <strong>J. Hu</strong>, <a href="https://item.jd.com/10137558708716.html" target="_blank">《底层视觉之美》</a> (The Beauty of Low-level Vision), 2025.</p>
-        </div>
+      <section class="publications-section">
+        <div class="publication-toggle" id="pubToggle">展开所有出版物</div>
+        <div class="publication-list" id="pubList">
+          <h3><em>Book</em></h3>
+          <div class="pub-item">
+            <p>C. Dong, <strong>J. Hu</strong>, <a href="https://item.jd.com/10137558708716.html" target="_blank">《底层视觉之美》</a> (The Beauty of Low-level Vision), 2025.</p>
+          </div>
 
-        <h3><em>Paper</em></h3>
-        <div class="pub-item">
-          <p><strong>J. Hu</strong>, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></strong>, 2025. <a href="https://github.com/J-FHu/CEM" target="_blank">[Code]</a><a href="https://arxiv.org/abs/2407.19789" target="_blank">[PDF]</a></p>
+          <h3><em>Paper</em></h3>
+          <div class="pub-item">
+            <p><strong>J. Hu</strong>, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></strong>, 2025. <a href="https://github.com/J-FHu/CEM" target="_blank">[Code]</a><a href="https://arxiv.org/abs/2407.19789" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p><strong>J. Hu<sup>*</sup></strong>, Z. You<sup>*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. arXiv, 2025. <a href="https://arxiv.org/abs/2502.12600" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>F. Yu, J. Gu, <strong>J. Hu</strong>, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. <strong><em>International Conference on Learning Representations (ICLR)</em></strong>, 2025. <a href="https://openreview.net/forum?id=uJqKf24HGN" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>F. Yu, J. Gu, Z. Li, <strong>J. Hu</strong>, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. <strong><em>Conference on Computer Vision and Pattern Recognition (CVPR)</em></strong>, 2024. <a href="https://supir.xpixel.group/" target="_blank">[Project Page]</a><a href="https://arxiv.org/abs/2401.13627" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>R. Ran, L.-J. Deng, T.-X. Jiang, <strong>J.-F. Hu</strong>, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. <strong><em>IEEE Transactions on Cybernetics (TCYB)</em></strong>, 2023. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/Evangelion09/GuidedNet" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/10035506/" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>X. Liu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. <strong><em>European Conference on Computer Vision Workshop (ECCVW)</em></strong>, 2022. <a href="https://github.com/J-FHu/UDCUNet" target="_blank">[Code]</a><a href="https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>Y.-W. Zhuo, T.-J. Zhang, <strong>J.-F. Hu</strong>, H.-X. Dou, T.-Z. Huang, and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. <strong><em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em></strong>, 2022. <a href="https://ieeexplore.ieee.org/abstract/document/9870551" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. <strong><em>IEEE Geoscience and Remote Sensing Letters</em></strong>, 2022. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/J-FHu/Fusformer" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/9841513" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>S. Peng, L.-J. Deng, <strong>J.-F. Hu</strong>, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. <strong><em>International Joint Conferences on Artificial Intelligence (IJCAI)</em></strong>, 2022. <a href="https://github.com/liangjiandeng/ADKNet" target="_blank">[Code]</a><a href="https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. <strong><em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em></strong>, 2021. <span class="highlight">ESI Highly Cited</span> <a href="https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html" target="_blank">[Project Page]</a><a href="https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and <strong>J.-F. Hu</strong>. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. <strong><em>Journal of Visual Communication and Image Representation</em></strong>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1047320321002893" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>Z.-C. Wu, T.-Z. Huang, L.-J. Deng, <strong>J.-F. Hu</strong>, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. <strong><em>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</em></strong>, 2021. <a href="https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html" target="_blank">[Project page]</a><a href="https://liangjiandeng.github.io/papers/2021/VOFF.pdf" target="_blank">[PDF]</a></p>
+          </div>
+          <div class="pub-item">
+            <p>Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, <strong>J.-F. Hu</strong>, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. <strong><em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em></strong>, 2020. <a href="https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html" target="_blank">[Project page]</a><a href="https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf" target="_blank">[PDF]</a></p>
+          </div>
+          <p align="left"><small>(<sup>*</sup> Equal contributions)</small></p>
         </div>
-        <div class="pub-item">
-          <p><strong>J. Hu<sup>*</sup></strong>, Z. You<sup>*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. arXiv, 2025. <a href="https://arxiv.org/abs/2502.12600" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>F. Yu, J. Gu, <strong>J. Hu</strong>, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. <strong><em>International Conference on Learning Representations (ICLR)</em></strong>, 2025. <a href="https://openreview.net/forum?id=uJqKf24HGN" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>F. Yu, J. Gu, Z. Li, <strong>J. Hu</strong>, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. <strong><em>Conference on Computer Vision and Pattern Recognition (CVPR)</em></strong>, 2024. <a href="https://supir.xpixel.group/" target="_blank">[Project Page]</a><a href="https://arxiv.org/abs/2401.13627" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>R. Ran, L.-J. Deng, T.-X. Jiang, <strong>J.-F. Hu</strong>, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. <strong><em>IEEE Transactions on Cybernetics (TCYB)</em></strong>, 2023. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/Evangelion09/GuidedNet" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/10035506/" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>X. Liu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. <strong><em>European Conference on Computer Vision Workshop (ECCVW)</em></strong>, 2022. <a href="https://github.com/J-FHu/UDCUNet" target="_blank">[Code]</a><a href="https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>Y.-W. Zhuo, T.-J. Zhang, <strong>J.-F. Hu</strong>, H.-X. Dou, T.-Z. Huang, and L.-J. Deng. Hyper-DSNet: Hyperspectral Pansharpening via A Deep-Shallow Fusion Network with Multi-Detail Extractor and Spectral Attention. <strong><em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em></strong>, 2022. <a href="https://ieeexplore.ieee.org/abstract/document/9870551" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. <strong><em>IEEE Geoscience and Remote Sensing Letters</em></strong>, 2022. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/J-FHu/Fusformer" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/9841513" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>S. Peng, L.-J. Deng, <strong>J.-F. Hu</strong>, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. <strong><em>International Joint Conferences on Artificial Intelligence (IJCAI)</em></strong>, 2022. <a href="https://github.com/liangjiandeng/ADKNet" target="_blank">[Code]</a><a href="https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. <strong><em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em></strong>, 2021. <span class="highlight">ESI Highly Cited</span> <a href="https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html" target="_blank">[Project Page]</a><a href="https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>T. Xu, T.-Z. Huang, L.-J. Deng, X.-L Zhao, and <strong>J.-F. Hu</strong>. Exemplar-based Image Inpainting Using Adaptive Two-Stage Structure-Tensor Based Priority Function and Nonlocal Filtering. <strong><em>Journal of Visual Communication and Image Representation</em></strong>, 2021. <a href="https://www.sciencedirect.com/science/article/abs/pii/S1047320321002893" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>Z.-C. Wu, T.-Z. Huang, L.-J. Deng, <strong>J.-F. Hu</strong>, and G. Vivone. VO+ Net: An Adaptive Approach Using Variational Optimization and Deep Learning for Panchromatic Sharpening. <strong><em>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</em></strong>, 2021. <a href="https://liangjiandeng.github.io/Projects_Res/VOFF_2021tgrs.html" target="_blank">[Project page]</a><a href="https://liangjiandeng.github.io/papers/2021/VOFF.pdf" target="_blank">[PDF]</a></p>
-        </div>
-        <div class="pub-item">
-          <p>Z.-C. Wu, T.-Z. Huang, L.-J. Deng, G. Vivone, J.-Q Miao, <strong>J.-F. Hu</strong>, and X.-L Zhao. A New Variational Approach Based on Proximal Deep Injection and Gradient Intensity Similarity for Spatio-Spectral Image Fusion. <strong><em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em></strong>, 2020. <a href="https://liangjiandeng.github.io/Projects_Res/DMPIF_2020jstars.html" target="_blank">[Project page]</a><a href="https://liangjiandeng.github.io/papers/2020/dmpif_2020jstars.pdf" target="_blank">[PDF]</a></p>
-        </div>
-        <p align="left"><small>(<sup>*</sup> Equal contributions)</small></p>
       </section>
 
       <!-- Products -->
@@ -450,11 +520,42 @@
   </div>
 
   <script>
-    document.getElementById('closeBtn').addEventListener('click', function(e) {
-        e.stopPropagation();
-        document.getElementById('floatBox').style.display = 'none';
+    // Theme Toggle Script
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if (savedTheme === 'light') {
+      body.setAttribute('data-theme', 'light');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      if (currentTheme === 'light') {
+        body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
     });
-</script>
-  
+
+    // Publication Toggle Script
+    const pubToggle = document.getElementById('pubToggle');
+    const pubList = document.getElementById('pubList');
+
+    pubToggle.addEventListener('click', () => {
+      pubList.classList.toggle('visible');
+      if (pubList.classList.contains('visible')) {
+        pubToggle.textContent = '收起出版物';
+      } else {
+        pubToggle.textContent = '展开所有出版物';
+      }
+    });
+  </script>
 </body>
 </html>
