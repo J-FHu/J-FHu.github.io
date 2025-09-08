@@ -800,6 +800,15 @@ document.addEventListener('DOMContentLoaded', function() {
       const themeToggle = document.getElementById('themeToggle');
       const body = document.body;
 
+      const savedTheme = localStorage.getItem('theme') || 'light'; // 默认为 'light'
+      if (savedTheme === 'light') {
+        body.setAttribute('data-theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        body.removeAttribute('data-theme'); // 确保移除属性，避免残留
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+      
       themeToggle.addEventListener('click', () => {
         const currentTheme = body.getAttribute('data-theme');
         if (currentTheme === 'light') {
