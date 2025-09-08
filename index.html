@@ -618,12 +618,12 @@
   right: 30px;
   background: rgba(10, 20, 40, 0.8);
   backdrop-filter: blur(16px);
-  padding: 1.2rem;
+  padding: 1.5rem 1rem; /* 增加垂直内边距，让内容更宽松 */
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
               inset 0 0 0 1px rgba(0, 200, 255, 0.2);
   z-index: 999;
-  max-width: 200px;
+  width: 160px; /* 固定宽度，确保居中效果统一 */
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: var(--transition);
 }
@@ -635,10 +635,10 @@
 }
 
 .toc-title {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--accent);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   text-align: center;
   border-bottom: 1px solid rgba(0, 200, 255, 0.3);
   padding-bottom: 0.5rem;
@@ -646,35 +646,39 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin: 0.6rem 0; /* 增加列表项间距 */
+}
+
 .toc-link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
+  font-size: 0.95rem; /* 稍微增大字体 */
+  font-weight: 500;
+  padding: 0.5rem 0; /* 增加上下内边距 */
   display: block;
   transition: var(--transition);
-  border-left: 3px solid transparent;
+  text-align: center; /* 文字居中 */
+  border-radius: 6px;
 }
 
-.toc-link:hover {
-  color: var(--accent);
-  background: rgba(0, 200, 255, 0.08);
-  transform: translateX(6px);
-}
-
+.toc-link:hover,
 .toc-link.active {
   color: var(--accent);
-  background: rgba(0, 200, 255, 0.15);
-  border-left: 3px solid var(--accent);
-  transform: translateX(6px);
+  background: rgba(0, 200, 255, 0.1);
 }
 
 /* ========== 亮色模式下的目录样式 ========== */
 body[data-theme="light"] .toc-container {
-  background: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-              inset 0 0 0 1px rgba(13, 110, 253, 0.2); /* 内边框颜色改为 --accent 的亮色版 */
+              inset 0 0 0 1px rgba(13, 110, 253, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -685,7 +689,7 @@ body[data-theme="light"] .toc-container:hover {
 
 body[data-theme="light"] .toc-title {
   color: var(--accent);
-  border-bottom: 1px solid rgba(13, 110, 253, 0.3); /* 下划线颜色 */
+  border-bottom: 1px solid rgba(13, 110, 253, 0.3);
 }
 
 body[data-theme="light"] .toc-link {
@@ -695,11 +699,7 @@ body[data-theme="light"] .toc-link {
 body[data-theme="light"] .toc-link:hover,
 body[data-theme="light"] .toc-link.active {
   color: var(--accent);
-  background: rgba(13, 110, 253, 0.08); /* 悬停/激活背景色 */
-}
-
-body[data-theme="light"] .toc-link.active {
-  border-left: 3px solid var(--accent);
+  background: rgba(13, 110, 253, 0.1);
 }
 
 /* Hide on small screens */
