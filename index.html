@@ -618,12 +618,12 @@
   right: 30px;
   background: rgba(10, 20, 40, 0.8);
   backdrop-filter: blur(16px);
-  padding: 1.5rem 1rem; /* 增加垂直内边距，让内容更宽松 */
+  padding: 1.5rem 1rem;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
               inset 0 0 0 1px rgba(0, 200, 255, 0.2);
   z-index: 999;
-  width: 160px; /* 固定宽度，确保居中效果统一 */
+  width: 160px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: var(--transition);
 }
@@ -635,13 +635,11 @@
 }
 
 .toc-title {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 1rem; /* 稍微增大标题字号 */
+  font-weight: 700; /* 加粗标题 */
   color: var(--accent);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem; /* 增加与列表的间距 */
   text-align: center;
-  border-bottom: 1px solid rgba(0, 200, 255, 0.3);
-  padding-bottom: 0.5rem;
   letter-spacing: 0.5px;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -653,25 +651,25 @@
 }
 
 .toc-item {
-  margin: 0.6rem 0; /* 增加列表项间距 */
+  margin: 0.6rem 0;
 }
 
 .toc-link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.95rem; /* 稍微增大字体 */
+  font-size: 0.95rem;
   font-weight: 500;
-  padding: 0.5rem 0; /* 增加上下内边距 */
+  padding: 0.5rem 0;
   display: block;
   transition: var(--transition);
   text-align: center; /* 文字居中 */
-  border-radius: 6px;
 }
 
 .toc-link:hover,
 .toc-link.active {
   color: var(--accent);
   background: rgba(0, 200, 255, 0.1);
+  border-radius: 6px; /* 悬停/激活时才显示圆角，视觉更干净 */
 }
 
 /* ========== 亮色模式下的目录样式 ========== */
@@ -689,7 +687,6 @@ body[data-theme="light"] .toc-container:hover {
 
 body[data-theme="light"] .toc-title {
   color: var(--accent);
-  border-bottom: 1px solid rgba(13, 110, 253, 0.3);
 }
 
 body[data-theme="light"] .toc-link {
