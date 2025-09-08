@@ -398,14 +398,15 @@
     
 <!-- 顶部固定导航栏 -->
 <nav class="top-nav">
-  <a href="#biography" class="top-nav-link">Biography</a>
-  <a href="#headlines" class="top-nav-link">Headlines</a>
-  <a href="#publications" class="top-nav-link">Publications</a>
-  <a href="#products" class="top-nav-link">Products</a>
-  <a href="#experiences" class="top-nav-link">Experiences</a>
-  <a href="#honors" class="top-nav-link">Honors</a>
-  <a href="#activities" class="top-nav-link">Activities</a>
-  <!-- 主题切换按钮 -->
+  <div class="nav-links-group">
+    <a href="#biography" class="top-nav-link">Biography</a>
+    <a href="#headlines" class="top-nav-link">Headlines</a>
+    <a href="#publications" class="top-nav-link">Publications</a>
+    <a href="#products" class="top-nav-link">Products</a>
+    <a href="#experiences" class="top-nav-link">Experiences</a>
+    <a href="#honors" class="top-nav-link">Honors</a>
+    <a href="#activities" class="top-nav-link">Activities</a>
+  </div>
   <button class="theme-toggle-in-nav" id="themeToggle">
     <i class="fas fa-moon"></i>
   </button>
@@ -427,7 +428,7 @@
   <div style="flex: 1; min-width: 300px;">
     <h3>[08/2025] 🎉🎉🎉 We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
     <p>HYPIR introduces a simple yet powerful paradigm: fine-tuning a pre-trained diffusion model with adversarial (GAN) loss — <strong>no diffusion sampling, no extra adapters</strong>. This achieves an unprecedented balance of speed, fidelity, and quality. Initializing GAN training from a pre-trained diffusion model anchors the model near the natural image manifold, ensuring stable training, faster convergence, and superior results — all in a single forward pass.</p>
-    <p><strong>Try it:</strong> The high-speed, high-performance image restoration model is available now on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
+    <p><strong>Official homepage:</strong> The high-speed, high-performance image restoration model is available now on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
   </div>
   <div style="flex: 1; min-width: 300px;">
     <img src="https://J-FHu.github.io/images/hypir.png" alt="HYPIR Teaser" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
@@ -494,10 +495,13 @@
         <div class="publication-list" id="pubList">
           <h3><em>Book</em></h3>
           <div class="pub-item">
-            <p>C. Dong, <strong>J. Hu</strong>, <a href="https://item.jd.com/10137558708716.html" target="_blank">《底层视觉之美》</a> (The Beauty of Low-level Vision)，电子工业出版社，2025.</p>
+            <p>董超, <strong>胡锦帆</strong>, <a href="https://item.jd.com/10137558708716.html" target="_blank">《底层视觉之美》</a>，电子工业出版社，2025.</p>
           </div>
 
           <h3><em>Paper</em></h3>
+          <div class="pub-item">
+            <p>X. Lin, F. Yu, J. Hu, Z. You, W. Shi, Jimmy S. Ren, J. Gu, C. Dong. Harnessing Diffusion-Yielded Score Priors for Image Restoration. <strong><em>ACM SIGGRAPH Asia</em></strong>, 2025. <a href="https://github.com/XPixelGroup/HYPIR" target="_blank">[Code]</a><a href="https://arxiv.org/pdf/2507.20590" target="_blank">[PDF]</a></p>
+          </div>
           <div class="pub-item">
             <p><strong>J. Hu</strong>, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></strong>, 2025. <a href="https://github.com/J-FHu/CEM" target="_blank">[Code]</a><a href="https://arxiv.org/abs/2407.19789" target="_blank">[PDF]</a></p>
           </div>
@@ -608,8 +612,6 @@
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center; /* 关键：让所有子元素整体居中 */
-  gap: 2rem;
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 200, 255, 0.2);
   transition: var(--transition);
@@ -620,7 +622,15 @@ body[data-theme="light"] .top-nav {
   border-bottom: 1px solid rgba(13, 110, 253, 0.2);
 }
 
-  /* ========== 顶部导航栏内的主题切换按钮 ========== */
+/* 链接组 - 占据剩余空间并居中 */
+.nav-links-group {
+  display: flex;
+  gap: 2rem;
+  flex-grow: 1; /* 占据剩余空间 */
+  justify-content: center; /* 内部链接居中 */
+}
+
+/* 主题切换按钮 - 靠右 */
 .theme-toggle-in-nav {
   background: none;
   border: none;
@@ -649,11 +659,6 @@ body[data-theme="light"] .theme-toggle-in-nav {
 body[data-theme="light"] .theme-toggle-in-nav:hover {
   color: var(--accent);
   background: rgba(13, 110, 253, 0.1);
-}
-  
-body[data-theme="light"] .top-nav {
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid rgba(13, 110, 253, 0.2);
 }
 
 .top-nav-link {
