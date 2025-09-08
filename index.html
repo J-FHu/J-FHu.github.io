@@ -378,10 +378,6 @@
 </head>
 <body>
   <div class="container">
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" id="themeToggle">
-      <i class="fas fa-moon"></i>
-    </button>
 
     <header>
       <img src="https://J-FHu.github.io/images/Hu_small.jpg" alt="Jinfan Hu" class="profile-img" />
@@ -400,7 +396,6 @@
       </div>
     </header>
     
-<!-- 顶部固定导航栏 -->
 <!-- 顶部固定导航栏 -->
 <nav class="top-nav">
   <a href="#biography" class="top-nav-link">Biography</a>
@@ -428,9 +423,9 @@
   <h2>🔥 Headlines</h2>
 
     <!-- HYPIR -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;flex-direction: row-reverse;">
   <div style="flex: 1; min-width: 300px;">
-    <h3>[03/2025] 🎉🎉🎉 We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
+    <h3>[08/2025] 🎉🎉🎉 We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
     <p>HYPIR introduces a simple yet powerful paradigm: fine-tuning a pre-trained diffusion model with adversarial (GAN) loss — <strong>no diffusion sampling, no extra adapters</strong>. This achieves an unprecedented balance of speed, fidelity, and quality. Initializing GAN training from a pre-trained diffusion model anchors the model near the natural image manifold, ensuring stable training, faster convergence, and superior results — all in a single forward pass.</p>
     <p><strong>Try it:</strong> The high-speed, high-performance image restoration model is available now on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
   </div>
@@ -607,17 +602,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(10, 20, 40, 0.9); /* 深色半透明背景 */
+  background: rgba(10, 20, 40, 0.9);
   backdrop-filter: blur(10px);
   padding: 0 2rem;
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* 关键：让所有子元素整体居中 */
   gap: 2rem;
   z-index: 1000;
   border-bottom: 1px solid rgba(0, 200, 255, 0.2);
   transition: var(--transition);
+}
+
+body[data-theme="light"] .top-nav {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.2);
 }
 
   /* ========== 顶部导航栏内的主题切换按钮 ========== */
@@ -642,7 +642,6 @@
   transform: scale(1.05);
 }
 
-/* 亮色模式下的按钮 */
 body[data-theme="light"] .theme-toggle-in-nav {
   color: var(--text-secondary);
 }
@@ -795,13 +794,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Theme Toggle Script
       const themeToggle = document.getElementById('themeToggle');
       const body = document.body;
-
-      // Check for saved theme preference
-      const savedTheme = localStorage.getItem('theme') || 'dark';
-      if (savedTheme === 'light') {
-        body.setAttribute('data-theme', 'light');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-      }
 
       themeToggle.addEventListener('click', () => {
         const currentTheme = body.getAttribute('data-theme');
