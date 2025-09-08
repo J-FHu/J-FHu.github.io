@@ -588,7 +588,7 @@
       © 2025 Jinfan Hu. Built with QWen.
     </footer>
 
-    <!-- Fixed Table of Contents -->
+     <!-- Fixed Table of Contents -->
 <div class="toc-container">
   <div class="toc-title">Quick Nav</div>
   <ul class="toc-list">
@@ -602,7 +602,7 @@
   </ul>
 </div>
     
-<!-- Floating Book Widget with Close Button -->
+<!-- 浮动书籍小部件 (这部分未改动) -->
 <div class="book-widget" id="bookWidget">
   <div class="close-book-btn" id="closeBookBtn">×</div>
   <a href="https://item.jd.com/10137558708716.html" target="_blank">
@@ -611,110 +611,106 @@
 </div>
 
 <style>
-/* ========== 深色模式下的目录样式 ========== */
+/* ========== 亮色模式下的目录样式 ========== */
 .toc-container {
   position: fixed;
   top: 20%;
   right: 30px;
-  background: rgba(10, 20, 40, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(16px);
   padding: 1.2rem;
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-              inset 0 0 0 1px rgba(0, 200, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+              inset 0 0 0 1px rgba(13, 110, 253, 0.2);
   z-index: 999;
   max-width: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: var(--transition);
 }
 
 .toc-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
-              inset 0 0 0 1px rgba(0, 200, 255, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
+              inset 0 0 0 1px rgba(13, 110, 253, 0.3);
 }
 
 .toc-title {
-  font-size: 0.9rem;
+  font-size: 1.1rem; /* 标题也稍微增大以保持平衡 */
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 0.8rem;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 200, 255, 0.3);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.3);
   padding-bottom: 0.5rem;
   letter-spacing: 0.5px;
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* ========== 列表样式 (新增) ========== */
+.toc-list {
+  list-style-type: none; /* 移除项目符号 (小三角) */
+  padding: 0; /* 移除默认的左侧内边距 */
+  margin: 0;
+}
+
+/* ========== 链接样式 (已修改) ========== */
 .toc-link {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
+  font-size: 1rem; /* 增大字体大小 */
+  padding: 0.5rem 0.8rem; /* 调整内边距以适应新字体大小 */
   border-radius: 8px;
   display: block;
   transition: var(--transition);
-  position: relative; /* 为伪元素定位做准备 */
-  padding-left: 1.5rem; /* 为三角形图标留出空间 */
+  border-left: 3px solid transparent;
 }
 
-/* 使用 ::before 伪元素添加三角形图标 */
-.toc-link::before {
-  content: '▶'; /* 使用 Unicode 三角形字符 */
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%); /* 将图标垂直居中对齐 */
-  color: var(--text-secondary);
-  font-size: 0.7rem;
-  transition: var(--transition);
-}
-
-/* 悬停和激活状态的三角形颜色 */
-.toc-link:hover::before,
-.toc-link.active::before {
+.toc-link:hover {
   color: var(--accent);
+  background: rgba(13, 110, 253, 0.08);
+  transform: translateX(6px);
 }
 
-/* ========== 亮色模式下的目录样式 ========== */
-body[data-theme="light"] .toc-container {
-  background: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-              inset 0 0 0 1px rgba(13, 110, 253, 0.2); /* 内边框颜色改为 --accent 的亮色版 */
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-body[data-theme="light"] .toc-container:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
-              inset 0 0 0 1px rgba(13, 110, 253, 0.3);
-}
-
-body[data-theme="light"] .toc-title {
+.toc-link.active {
   color: var(--accent);
-  border-bottom: 1px solid rgba(13, 110, 253, 0.3); /* 下划线颜色 */
-}
-
-body[data-theme="light"] .toc-link {
-  color: var(--text-secondary);
-}
-
-body[data-theme="light"] .toc-link:hover,
-body[data-theme="light"] .toc-link.active {
-  color: var(--accent);
-  background: rgba(13, 110, 253, 0.08); /* 悬停/激活背景色 */
-}
-
-body[data-theme="light"] .toc-link.active {
+  background: rgba(13, 110, 253, 0.15);
   border-left: 3px solid var(--accent);
+  transform: translateX(6px);
+}
+    
+
+/* ========== 深色模式下的目录样式 ========== */
+body[data-theme="dark"] .toc-container {
+  background: rgba(10, 20, 40, 0.8);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+              inset 0 0 0 1px rgba(0, 200, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Hide on small screens */
+body[data-theme="dark"] .toc-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
+              inset 0 0 0 1px rgba(0, 200, 255, 0.3);
+}
+
+body[data-theme="dark"] .toc-title {
+  border-bottom: 1px solid rgba(0, 200, 255, 0.3);
+}
+
+body[data-theme="dark"] .toc-link:hover,
+body[data-theme="dark"] .toc-link.active {
+  background: rgba(0, 200, 255, 0.08);
+}
+
+body[data-theme="dark"] .toc-link.active {
+  background: rgba(0, 200, 255, 0.15);
+}
+
+/* 在小屏幕上隐藏目录 */
 @media (max-width: 768px) {
   .toc-container {
     display: none;
   }
 }
-  
   /* Floating Book Widget */
   .book-widget {
     position: fixed;
