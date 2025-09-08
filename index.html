@@ -654,20 +654,26 @@
   border-radius: 8px;
   display: block;
   transition: var(--transition);
-  border-left: 3px solid transparent;
+  position: relative; /* 为伪元素定位做准备 */
+  padding-left: 1.5rem; /* 为三角形图标留出空间 */
 }
 
-.toc-link:hover {
-  color: var(--accent);
-  background: rgba(0, 200, 255, 0.08);
-  transform: translateX(6px);
+/* 使用 ::before 伪元素添加三角形图标 */
+.toc-link::before {
+  content: '▶'; /* 使用 Unicode 三角形字符 */
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%); /* 将图标垂直居中对齐 */
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  transition: var(--transition);
 }
 
-.toc-link.active {
+/* 悬停和激活状态的三角形颜色 */
+.toc-link:hover::before,
+.toc-link.active::before {
   color: var(--accent);
-  background: rgba(0, 200, 255, 0.15);
-  border-left: 3px solid var(--accent);
-  transform: translateX(6px);
 }
 
 /* ========== 亮色模式下的目录样式 ========== */
