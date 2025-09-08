@@ -448,5 +448,13 @@
       <img src="https://J-FHu.github.io/images/bookicon.jpg" alt="《底层视觉之美》">
     </a>
   </div>
+
+  <script>
+    document.getElementById('closeBtn').addEventListener('click', function(e) {
+        e.stopPropagation();
+        document.getElementById('floatBox').style.display = 'none';
+    });
+</script>
+  
 </body>
 </html>
