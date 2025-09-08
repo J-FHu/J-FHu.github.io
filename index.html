@@ -427,13 +427,13 @@
 
     <main>
       <!-- Biography -->
-      <section>
+      <section id="biography">
         <h2>📚 Biography</h2>
         <p><strong>Jinfan Hu</strong> is pursuing his Ph.D. degree in <a href="http://xpixel.group/index.html" target="_blank">XPixel Group</a>, Shenzhen Institute of Advanced Technology (<a href="https://www.siat.ac.cn/" target="_blank">SIAT</a>), Chinese Academy of Sciences (<a href="https://english.cas.cn/index.shtml" target="_blank">CAS</a>). He is now supervised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a>. He obtained his Bachelor and Master degrees in Mathematics (supervised by Prof. <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm" target="_blank">Ting-Zhu Huang</a> and Prof. <a href="https://liangjiandeng.github.io/" target="_blank">Liang-Jian Deng</a>) from the University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>), Chengdu, China in 2019 and 2022. His research interests include low-level vision (LV) and AI interpretability.</p>
       </section>
 
 <!-- Headlines -->
-<section>
+<section id="headlines">
   <h2>🔥 Headlines</h2>
 
   <!-- CEM Paper -->
@@ -486,7 +486,7 @@
 </section>
 
       <!-- Publications -->
-      <section>
+      <section id="publications">
         <div class="pub-section-header">
           <h2>📝 Publications</h2>
           <button class="pub-toggle-btn" id="pubToggle">
@@ -544,13 +544,13 @@
       </section>
 
       <!-- Products -->
-      <section>
+      <section id="products">
         <h2>📸 Products</h2>
         <p>For a comprehensive exploration of our technologies, visit our official websites: <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
       </section>
 
       <!-- Experiences -->
-      <section>
+      <section id="experiences">
         <h2>📖 Experiences</h2>
         <ul>
           <li>09/2022-present: Ph.D. student in computer science. (Supervisor: Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a>); Shenzhen Institute of Advanced Technology (<a href="https://www.siat.ac.cn/" target="_blank">SIAT</a>), University of Chinese Academy of Sciences (<a href="https://www.ucas.ac.cn/" target="_blank">UCAS</a>)</li>
@@ -560,7 +560,7 @@
       </section>
 
       <!-- Honors and Awards -->
-      <section>
+      <section id="honors">
         <h2>🏆 Honors and Awards</h2>
         <ul>
           <li>2nd Place in ECCV <a href="http://mipi-challenge.org/" target="_blank">MIPI 2022 Challenge</a> on UDC image restoration, 2022</li>
@@ -570,7 +570,7 @@
       </section>
 
       <!-- Academic Activities -->
-      <section>
+      <section id="activities">
         <h2>💬 Academic Activities</h2>
         <p><strong>Peer-Reviewer:</strong></p>
         <ul>
@@ -588,6 +588,20 @@
       © 2025 Jinfan Hu. Built with QWen.
     </footer>
 
+    <!-- Fixed Table of Contents -->
+<div class="toc-container">
+  <div class="toc-title">Quick Nav</div>
+  <ul class="toc-list">
+    <li class="toc-item"><a href="#biography" class="toc-link">Biography</a></li>
+    <li class="toc-item"><a href="#headlines" class="toc-link">Headlines</a></li>
+    <li class="toc-item"><a href="#publications" class="toc-link">Publications</a></li>
+    <li class="toc-item"><a href="#products" class="toc-link">Products</a></li>
+    <li class="toc-item"><a href="#experiences" class="toc-link">Experiences</a></li>
+    <li class="toc-item"><a href="#honors" class="toc-link">Honors</a></li>
+    <li class="toc-item"><a href="#activities" class="toc-link">Activities</a></li>
+  </ul>
+</div>
+    
 <!-- Floating Book Widget with Close Button -->
 <div class="book-widget" id="bookWidget">
   <div class="close-book-btn" id="closeBookBtn">×</div>
@@ -597,6 +611,64 @@
 </div>
 
 <style>
+/* Fixed Table of Contents */
+.toc-container {
+  position: fixed;
+  top: 20%;
+  right: 20px;
+  background: rgba(22, 33, 62, 0.8); /* 半透明白色背景 */
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  max-width: 200px;
+}
+
+.toc-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-item {
+  margin: 0.5rem 0;
+}
+
+.toc-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  display: block;
+  transition: var(--transition);
+}
+
+.toc-link:hover,
+.toc-link.active {
+  color: var(--accent);
+  background: rgba(0, 200, 255, 0.1);
+  transform: translateX(4px);
+}
+
+/* Hide on small screens */
+@media (max-width: 768px) {
+  .toc-container {
+    display: none;
+  }
+}
+  
   /* Floating Book Widget */
   .book-widget {
     position: fixed;
@@ -652,6 +724,46 @@
 
     <!-- Main JavaScript -->
     <script>
+      // Table of Contents Scroll and Highlight
+document.addEventListener('DOMContentLoaded', function() {
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = document.querySelectorAll('section');
+
+  // Smooth scroll on click
+  tocLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 100, // 距离顶部留出100px空间
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Highlight active section on scroll
+  window.addEventListener('scroll', function() {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - 200) { // 提前200px触发高亮
+        current = '#' + section.getAttribute('id');
+      }
+    });
+
+    tocLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+});
+      
       // Theme Toggle Script
       const themeToggle = document.getElementById('themeToggle');
       const body = document.body;
