@@ -424,7 +424,18 @@
         </div>
       </div>
     </header>
-
+    
+<!-- 顶部固定导航栏 -->
+<nav class="top-nav">
+  <a href="#biography" class="top-nav-link">Biography</a>
+  <a href="#headlines" class="top-nav-link">Headlines</a>
+  <a href="#publications" class="top-nav-link">Publications</a>
+  <a href="#products" class="top-nav-link">Products</a>
+  <a href="#experiences" class="top-nav-link">Experiences</a>
+  <a href="#honors" class="top-nav-link">Honors</a>
+  <a href="#activities" class="top-nav-link">Activities</a>
+</nav>
+    
     <main>
       <!-- Biography -->
       <section id="biography">
@@ -588,19 +599,6 @@
       © 2025 Jinfan Hu. Built with QWen.
     </footer>
 
-<!-- Fixed Table of Contents -->
-<div class="toc-container">
-  <div class="toc-title">Quick Nav</div>
-  <ul class="toc-list">
-    <li class="toc-item"><a href="#biography" class="toc-link">Biography</a></li>
-    <li class="toc-item"><a href="#headlines" class="toc-link">Headlines</a></li>
-    <li class="toc-item"><a href="#publications" class="toc-link">Publications</a></li>
-    <li class="toc-item"><a href="#products" class="toc-link">Products</a></li>
-    <li class="toc-item"><a href="#experiences" class="toc-link">Experiences</a></li>
-    <li class="toc-item"><a href="#honors" class="toc-link">Honors</a></li>
-    <li class="toc-item"><a href="#activities" class="toc-link">Activities</a></li>
-  </ul>
-</div>
     
 <!-- Floating Book Widget with Close Button -->
 <div class="book-widget" id="bookWidget">
@@ -611,100 +609,68 @@
 </div>
 
 <style>
-/* ========== 深色模式下的目录样式 ========== */
-.toc-container {
+/* ========== 顶部固定导航栏 ========== */
+.top-nav {
   position: fixed;
-  top: 20%;
-  right: 30px;
-  background: rgba(10, 20, 40, 0.8);
-  backdrop-filter: blur(16px);
-  padding: 1.5rem 1rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
-              inset 0 0 0 1px rgba(0, 200, 255, 0.2);
-  z-index: 999;
-  width: 160px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 20, 40, 0.9); /* 深色半透明背景 */
+  backdrop-filter: blur(10px);
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 200, 255, 0.2);
   transition: var(--transition);
 }
 
-.toc-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4),
-              inset 0 0 0 1px rgba(0, 200, 255, 0.3);
+body[data-theme="light"] .top-nav {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.2);
 }
 
-.toc-title {
-  font-size: 1rem; /* 稍微增大标题字号 */
-  font-weight: 700; /* 加粗标题 */
-  color: var(--accent);
-  margin-bottom: 1.2rem; /* 增加与列表的间距 */
-  text-align: center;
-  letter-spacing: 0.5px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.toc-list {
-  list-style: none; /* 显式声明无列表样式 */
-  padding: 0;
-  margin: 0;
-  /* 可选：为了更彻底，可以添加以下属性 */
-  counter-reset: toc-counter; /* 用于计数器，但这里不使用 */
-}
-
-.toc-item {
-  margin: 0.6rem 0;
-}
-
-.toc-link {
+.top-nav-link {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
-  padding: 0.5rem 0;
-  display: block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
   transition: var(--transition);
-  text-align: center; /* 文字居中 */
 }
 
-.toc-link:hover,
-.toc-link.active {
+.top-nav-link:hover,
+.top-nav-link.active {
   color: var(--accent);
   background: rgba(0, 200, 255, 0.1);
-  border-radius: 6px; /* 悬停/激活时才显示圆角，视觉更干净 */
 }
 
-/* ========== 亮色模式下的目录样式 ========== */
-body[data-theme="light"] .toc-container {
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-              inset 0 0 0 1px rgba(13, 110, 253, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+/* 让主内容区域为顶部导航留出空间 */
+main {
+  margin-top: 80px; /* 60px (导航栏) + 20px (间距) */
 }
 
-body[data-theme="light"] .toc-container:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15),
-              inset 0 0 0 1px rgba(13, 110, 253, 0.3);
-}
-
-body[data-theme="light"] .toc-title {
-  color: var(--accent);
-}
-
-body[data-theme="light"] .toc-link {
-  color: var(--text-secondary);
-}
-
-body[data-theme="light"] .toc-link:hover,
-body[data-theme="light"] .toc-link.active {
-  color: var(--accent);
-  background: rgba(13, 110, 253, 0.1);
-}
-
-/* Hide on small screens */
+/* 手机端适配 */
 @media (max-width: 768px) {
-  .toc-container {
-    display: none;
+  .top-nav {
+    padding: 0 1rem;
+    gap: 1rem;
+    height: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .top-nav-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  main {
+    margin-top: 70px;
   }
 }
   
@@ -763,38 +729,37 @@ body[data-theme="light"] .toc-link.active {
 
     <!-- Main JavaScript -->
     <script>
-      // Table of Contents Scroll and Highlight
+      // 顶部导航栏高亮脚本
 document.addEventListener('DOMContentLoaded', function() {
-  const tocLinks = document.querySelectorAll('.toc-link');
+  const navLinks = document.querySelectorAll('.top-nav-link');
   const sections = document.querySelectorAll('section');
 
-  // Smooth scroll on click
-  tocLinks.forEach(link => {
+  // 平滑滚动
+  navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       const targetSection = document.querySelector(targetId);
       if (targetSection) {
         window.scrollTo({
-          top: targetSection.offsetTop - 100, // 距离顶部留出100px空间
+          top: targetSection.offsetTop - 80, // 减去导航栏高度
           behavior: 'smooth'
         });
       }
     });
   });
 
-  // Highlight active section on scroll
+  // 滚动高亮
   window.addEventListener('scroll', function() {
     let current = '';
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - 200) { // 提前200px触发高亮
+      if (pageYOffset >= sectionTop - 200) {
         current = '#' + section.getAttribute('id');
       }
     });
 
-    tocLinks.forEach(link => {
+    navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href') === current) {
         link.classList.add('active');
