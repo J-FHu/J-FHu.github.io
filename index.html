@@ -239,31 +239,6 @@
       border: 1px solid rgba(255, 107, 107, 0.3);
     }
 
-/*     /* Theme Toggle Button */
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--card-bg);
-      border: none;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      z-index: 100;
-      transition: var(--transition);
-      color: var(--text-primary);
-    }
-
-    .theme-toggle:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    } */
-
     /* Publications Toggle */
     .pub-section-header {
       display: flex;
@@ -452,6 +427,18 @@
 <section id="headlines">
   <h2>🔥 Headlines</h2>
 
+    <!-- HYPIR -->
+  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <h3>[03/2025] 🎉🎉🎉 We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
+    <p>HYPIR introduces a simple yet powerful paradigm: fine-tuning a pre-trained diffusion model with adversarial (GAN) loss — <strong>no diffusion sampling, no extra adapters</strong>. This achieves an unprecedented balance of speed, fidelity, and quality. Initializing GAN training from a pre-trained diffusion model anchors the model near the natural image manifold, ensuring stable training, faster convergence, and superior results — all in a single forward pass.</p>
+    <p><strong>Try it:</strong> The high-speed, high-performance image restoration model is available now on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="https://J-FHu.github.io/images/hypir.png" alt="HYPIR Teaser" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
+  </div>
+</div>
+  
   <!-- CEM Paper -->
   <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
     <div style="flex: 1; min-width: 300px;">
