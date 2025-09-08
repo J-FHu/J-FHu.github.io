@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 页面自动重定向到 /homepage/ -->
+  <meta http-equiv="refresh" content="0;url=./homepage/">
+  <!-- 其他 meta 标签... -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jinfan Hu | Ph.D. Candidate @ SIAT, CAS</title>
@@ -290,12 +293,12 @@
     }
 
     .publication-list {
-      display: none;
+      display: block; /* 默认展开 */
       animation: fadeIn 0.5s ease-in;
     }
 
-    .publication-list.visible {
-      display: block;
+    .publication-list.collapsed {
+      display: none; /* 收起时隐藏 */
     }
 
     @keyframes fadeIn {
@@ -490,7 +493,7 @@
         <div class="pub-section-header">
           <h2>📝 Publications</h2>
           <button class="pub-toggle-btn" id="pubToggle">
-            <span id="toggleIcon">▼</span>
+            <span id="toggleIcon">▲</span>
           </button>
         </div>
         <div class="publication-list" id="pubList">
@@ -678,17 +681,16 @@
 
       // Publication Toggle Script
       const pubToggle = document.getElementById('pubToggle');
-      const pubList = document.getElementById('pubList');
-      const toggleIcon = document.getElementById('toggleIcon');
+  const pubList = document.getElementById('pubList');
 
-      pubToggle.addEventListener('click', () => {
-        pubList.classList.toggle('visible');
-        if (pubList.classList.contains('visible')) {
-          pubToggle.innerHTML = '<span id="toggleIcon">▲</span>';
-        } else {
-          pubToggle.innerHTML = '<span id="toggleIcon">▼</span>';
-        }
-      });
+  pubToggle.addEventListener('click', () => {
+    pubList.classList.toggle('collapsed'); 
+    if (pubList.classList.contains('collapsed')) {
+      pubToggle.innerHTML = '<span id="toggleIcon">▼</span>';
+    } else {
+      pubToggle.innerHTML = '<span id="toggleIcon">▲</span>';
+    }
+  });
 
       // Book Widget Close Script
       const closeBookBtn = document.getElementById('closeBookBtn');
