@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jinfan Hu | Ph.D. Candidate @ SIAT, CAS</title>
+  <meta name="description" content="Jinfan Hu is a Ph.D. candidate at SIAT, CAS, researching low-level vision and AI interpretability. Supervised by Prof. Chao Dong." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --text-primary: #212529;
+      --text-secondary: #6c757d;
+      --accent: #0d6efd;
+      --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      --border-radius: 12px;
+      --transition: all 0.3s ease;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #121212;
+      --bg-secondary: #1e1e1e;
+      --text-primary: #e9ecef;
+      --text-secondary: #adb5bd;
+      --accent: #4dabf7;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: var(--transition);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      box-shadow: var(--card-shadow);
+      transition: var(--transition);
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .bio {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    .affiliation {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--text-secondary);
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .btn:hover {
+      background: #0b5ed7;
+      transform: translateY(-2px);
+    }
+
+    section {
+      margin: 4rem 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 3px;
+    }
+
+    .headline-card, .pub-card, .experience-card {
+      background: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--card-shadow);
+      transition: var(--transition);
+    }
+
+    .headline-card:hover, .pub-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    .pub-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pub-meta {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: rgba(13, 110, 253, 0.1);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .highlight {
+      background: #fff3cd;
+      color: #856404;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .dark-mode-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--bg-secondary);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--card-shadow);
+      z-index: 100;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .links {
+        justify-content: center;
+      }
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Floating Book Ad (Optional) */
+    .book-ad {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      z-index: 999;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .book-ad:hover {
+      transform: scale(1.1);
+    }
+
+    .book-ad img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="themeToggle">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <div class="container">
+
+    <!-- Header / Bio -->
+    <header>
+      <img src="https://J-FHu.github.io/images/Hu.jpg" alt="Jinfan Hu" class="profile-img" />
+      <div class="bio">
+        <h1>Jinfan Hu</h1>
+        <p class="affiliation">Ph.D. Candidate @ <a href="https://www.siat.ac.cn/" target="_blank">SIAT, CAS</a> | Advised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a></p>
+        <p>Researching Low-level Vision & AI Interpretability. Formerly at <a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a> (B.S. & M.S. in Mathematics).</p>
+        <div class="links">
+          <a href="mailto:jf.hu1@siat.ac.cn" class="btn"><i class="fas fa-envelope"></i> Email</a>
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ" class="btn" target="_blank"><i class="fab fa-google"></i> Scholar</a>
+          <a href="https://github.com/J-FHu" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Headlines -->
+    <section>
+      <h2>🔥 Recent Highlights</h2>
+      <div class="headline-card">
+        <h3>🎉 TPAMI 2025: Interpreting Low-level Vision Models with Causal Effect Maps (CEM)</h3>
+        <p>Introducing a model-agnostic causal analysis tool to visualize & quantify input-output relationships in LV models. Challenges common beliefs: e.g., larger receptive fields ≠ always better.</p>
+        <div class="tags">
+          <span class="tag">TPAMI</span>
+          <span class="tag">AI Interpretability</span>
+          <span class="tag">Causality</span>
+        </div>
+        <a href="https://arxiv.org/abs/2407.19789" target="_blank" class="btn" style="margin-top: 1rem;">Read Paper</a>
+      </div>
+
+      <div class="headline-card">
+        <h3>🎉 arXiv 2025: Revisiting Generalization in LV Models</h3>
+        <p>Blindly expanding training data ≠ better generalization. The key is guiding networks to learn image content, not degradation patterns.</p>
+        <div class="tags">
+          <span class="tag">arXiv</span>
+          <span class="tag">Generalization</span>
+          <span class="tag">Image Deraining</span>
+        </div>
+        <a href="https://arxiv.org/abs/2502.12600" target="_blank" class="btn" style="margin-top: 1rem;">Read Paper</a>
+      </div>
+
+      <div class="headline-card">
+        <h3>📚 New Book: 《底层视觉之美》(The Beauty of Low-level Vision)</h3>
+        <p>Co-authored with Prof. Chao Dong. A comprehensive guide to the theory and practice of low-level vision. Now available on JD.com!</p>
+        <a href="https://item.jd.com/10137558708716.html" target="_blank" class="btn" style="margin-top: 1rem;">Get the Book</a>
+      </div>
+
+      <div class="headline-card">
+        <h3>🚀 SUPIR: Scaling Up for Photo-Realistic Image Restoration</h3>
+        <p>Groundbreaking method leveraging generative priors & model scaling. Powers <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
+        <div class="tags">
+          <span class="tag">CVPR 2024</span>
+          <span class="tag">Image Restoration</span>
+          <span class="tag">Diffusion</span>
+        </div>
+        <a href="https://arxiv.org/abs/2401.13627" target="_blank" class="btn" style="margin-top: 1rem;">Project Page</a>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section>
+      <h2>📚 Selected Publications</h2>
+
+      <div class="pub-card">
+        <h3>Interpreting Low-level Vision Models with Causal Effect Maps</h3>
+        <div class="pub-meta">IEEE TPAMI, 2025 | <strong>Jinfan Hu</strong>, J. Gu, S. Yao, F. Yu, Z. Li, Z. You, C. Lu, C. Dong</div>
+        <p>Proposes CEM — a causal diagnostic tool for LV models. Code available on GitHub.</p>
+        <div class="tags">
+          <span class="tag">TPAMI</span>
+          <span class="tag">First Author</span>
+          <span class="highlight">Code Available</span>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a href="https://arxiv.org/abs/2407.19789" class="btn" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <a href="https://github.com/J-FHu/CEM" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+
+      <div class="pub-card">
+        <h3>Fusformer: Transformer-based Fusion for Hyperspectral Image SR</h3>
+        <div class="pub-meta">IEEE GRSL, 2022 | <strong>Jinfan Hu</strong> et al.</div>
+        <p>Transformer architecture for hyperspectral super-resolution. <span class="highlight">ESI Highly Cited Paper</span>.</p>
+        <div class="tags">
+          <span class="tag">GRSL</span>
+          <span class="tag">First Author</span>
+          <span class="highlight">Highly Cited</span>
+        </div>
+        <a href="https://ieeexplore.ieee.org/abstract/document/9841513" class="btn" target="_blank" style="margin-top: 1rem;">View</a>
+      </div>
+
+      <div class="pub-card">
+        <h3>GuidedNet: CNN Fusion Framework for HSI Super-resolution</h3>
+        <div class="pub-meta">IEEE TCYB, 2023 | R. Ran, L.-J. Deng, <strong>Jinfan Hu</strong> et al.</div>
+        <p>Uses high-res guidance for fusion. <span class="highlight">ESI Highly Cited Paper</span>.</p>
+        <div class="tags">
+          <span class="tag">TCYB</span>
+          <span class="highlight">Highly Cited</span>
+        </div>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10035506/" class="btn" target="_blank" style="margin-top: 1rem;">View</a>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="#publications" class="btn" style="background: transparent; border: 2px solid var(--accent);">View All Publications</a>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>🎓 Education & Experience</h2>
+      <div class="experience-card">
+        <h3>Ph.D. in Computer Science</h3>
+        <p><strong>Shenzhen Institute of Advanced Technology (SIAT), CAS</strong> | Sep 2022 – Present</p>
+        <p>Advisor: Prof. Chao Dong</p>
+      </div>
+      <div class="experience-card">
+        <h3>M.S. in Mathematics</h3>
+        <p><strong>University of Electronic Science and Technology of China (UESTC)</strong> | Sep 2019 – Jun 2022</p>
+        <p>Advisors: Prof. Ting-Zhu Huang & Prof. Liang-Jian Deng</p>
+      </div>
+      <div class="experience-card">
+        <h3>B.S. in Information & Computing Science</h3>
+        <p><strong>University of Electronic Science and Technology of China (UESTC)</strong> | Sep 2015 – Jun 2019</p>
+      </div>
+    </section>
+
+    <!-- Honors -->
+    <section>
+      <h2>🏆 Honors & Awards</h2>
+      <ul style="list-style: none; padding-left: 0;">
+        <li style="margin-bottom: 0.8rem;">🥈 2nd Place, ECCV MIPI 2022 Challenge (UDC Image Restoration)</li>
+        <li style="margin-bottom: 0.8rem;">🏅 National Scholarship (2021)</li>
+        <li style="margin-bottom: 0.8rem;">🥇 National First Prize, CUMCM (2017)</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Floating Book Ad -->
+  <a href="https://item.jd.com/10137558708716.html" target="_blank" class="book-ad">
+    <img src="https://J-FHu.github.io/images/bookicon.jpg" alt="《底层视觉之美》" />
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Jinfan Hu. Built with QWen.
+  </footer>
+
+  <script>
+    // Dark Mode Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    if (savedTheme === 'dark') {
+      body.setAttribute('data-theme', 'dark');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme');
+      if (currentTheme === 'dark') {
+        body.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+    });
+  </script>
+
+</body>
+</html>
