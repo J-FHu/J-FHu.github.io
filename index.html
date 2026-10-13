@@ -5,850 +5,729 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jinfan Hu | Ph.D. @ SIAT, CAS</title>
   <meta name="description" content="Jinfan Hu received his Ph.D. in Computer Applied Technology from SIAT, CAS, advised by Prof. Chao Dong. His research covers low-level vision, generative models, and model interpretability.">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-bg: #0f0f1a;
-      --secondary-bg: #1a1a2e;
-      --accent: #00c8ff;
-      --text-primary: #e0e0ff;
-      --text-secondary: #a0a0c0;
-      --card-bg: #16213e;
-      --border-radius: 16px;
-      --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      --bg: #070b12;
+      --bg-2: #0c1422;
+      --panel: rgba(12, 20, 34, 0.78);
+      --line: rgba(120, 196, 255, 0.16);
+      --line-strong: rgba(120, 196, 255, 0.38);
+      --cyan: #67e8ff;
+      --violet: #9b8cff;
+      --text: #e8eef8;
+      --muted: #93a0b5;
+      --dim: #6d7b90;
+      --hot: #ffb45c;
+      --radius: 0px;
+      --pixel: Outfit, "Segoe UI", sans-serif;
+      --max: 1120px;
     }
 
-    [data-theme="light"] {
-      --primary-bg: #ffffff;
-      --secondary-bg: #f8f9fa;
-      --accent: #0d6efd;
-      --text-primary: #212529;
-      --text-secondary: #6c757d;
-      --card-bg: #f8f9fa;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      background: var(--primary-bg);
-      color: var(--text-primary);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-      overflow-x: hidden;
-      transition: var(--transition);
+      margin: 0;
+      color: var(--text);
+      font-family: Outfit, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(900px 480px at 12% -10%, rgba(103, 232, 255, 0.16), transparent 60%),
+        radial-gradient(700px 420px at 100% 8%, rgba(155, 140, 255, 0.16), transparent 55%),
+        linear-gradient(180deg, #070b12 0%, #090e18 40%, #070b12 100%);
+      line-height: 1.65;
+      min-height: 100vh;
     }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-
-    /* Header Styles */
-    header {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      margin: 4rem 0 3rem;
-      flex-wrap: wrap;
-    }
-
-    .profile-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent);
-      box-shadow: 0 0 30px rgba(0, 200, 255, 0.3);
-      transition: var(--transition);
-    }
-
-    .profile-img:hover {
-      transform: scale(1.05) rotate(2deg);
-      box-shadow: 0 0 40px rgba(0, 200, 255, 0.5);
-    }
-
-    .bio {
-      flex: 1;
-      min-width: 300px;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      background: linear-gradient(90deg, var(--accent), #ff00aa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.5px;
-    }
-
-    .affiliation {
-      font-size: 1.1rem;
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-    }
-
-    .links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: rgba(0, 200, 255, 0.1);
-      color: var(--accent);
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: 500;
-      border: 1px solid rgba(0, 200, 255, 0.3);
-      transition: var(--transition);
-      backdrop-filter: blur(10px);
-    }
-
-    .btn:hover {
-      background: rgba(0, 200, 255, 0.2);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(0, 200, 255, 0.2);
-    }
-
-    /* Section Styles */
-    section {
-      margin: 4rem 0;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      position: relative;
-      
-      display: inline-block;
-    }
-
-    h2::after {
-      content: '';
-      position: absolute;
-      bottom: -8px;
-      left: 0;
-      width: 70px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      border-radius: 2px;
-    }
-
-    h3 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin: 1.5rem 0 0.5rem;
-      color: var(--accent);
-    }
-
-    p, li {
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 1.5rem;
-    }
-
-    ul li {
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
-    ul li::before {
-      content: '▹';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      transition: var(--transition);
-      border-bottom: 1px dotted transparent;
-    }
-
-    a:hover {
-      border-bottom: 1px dotted var(--accent);
-      color: #ffffff;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: var(--border-radius);
-      margin: 1rem 0;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      /* 图片等比例缩小，避免过大 */
-      max-height: 500px;
-      object-fit: contain;
-    }
-
-    .pub-item {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: var(--border-radius);
-      margin-bottom: 1.5rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: var(--transition);
-    }
-
-    .pub-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-      border-color: rgba(0, 200, 255, 0.2);
-    }
-
-    .highlight {
-      color: #ff6b6b;
-      font-weight: 600;
-      /* 修复宽度问题 */
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      background: rgba(255, 107, 107, 0.2);
-      border-radius: 20px;
-      font-size: 0.85rem;
-      border: 1px solid rgba(255, 107, 107, 0.3);
-      margin-right: 0.5rem;
-      margin-top: 0.5rem;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      background: rgba(255, 107, 107, 0.2);
-      border-radius: 20px;
-      font-size: 0.85rem;
-      margin-right: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid rgba(255, 107, 107, 0.3);
-    }
-
-    /* Publications Toggle */
-    .pub-section-header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .pub-toggle-btn {
-      background: none;
-      border: none;
-      color: var(--accent);
-      font-size: 1.2rem;
-      font-weight: 600;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: var(--transition);
-    }
-
-    .pub-toggle-btn:hover {
-      color: #ffffff;
-    }
-
-    .publication-list {
-      display: block; /* 默认展开 */
-      animation: fadeIn 0.5s ease-in;
-    }
-
-    .publication-list.collapsed {
-      display: none; /* 收起时隐藏 */
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    /* Floating Book Widget */
-    .book-widget {
+    body::before {
+      content: "";
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 80px;
-      height: 80px;
-      z-index: 1000;
-      cursor: pointer;
-      transition: var(--transition);
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(103, 232, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(103, 232, 255, 0.05) 1px, transparent 1px);
+      background-size: 8px 8px;
+      mask-image: radial-gradient(circle at 30% 10%, #000 0%, transparent 72%);
+      z-index: 0;
     }
-
-    .book-widget:hover {
-      transform: scale(1.1) rotate(5deg);
-    }
-
-    .book-widget img {
+    #net {
+      position: fixed;
+      inset: 0;
       width: 100%;
       height: 100%;
-      border-radius: 12px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .orb { display: none; }
+    .orb.a {
+      left: -80px;
+      top: 40px;
+      background: radial-gradient(circle, rgba(103, 232, 255, 0.45), transparent 68%);
+      animation: drift 14s ease-in-out infinite;
+    }
+    .orb.b {
+      right: -120px;
+      top: 180px;
+      background: radial-gradient(circle, rgba(155, 140, 255, 0.42), transparent 68%);
+      animation: drift 18s ease-in-out infinite reverse;
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+      50% { transform: translate3d(40px, 28px, 0) scale(1.08); }
     }
 
-    /* Close Button for Book Widget */
-    .close-book-btn {
-      position: absolute;
-      top: -6px;
-      right: -6px;
-      width: 20px;
-      height: 20px;
-      background: #ff4444;
-      border-radius: 50%;
-      color: white;
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { color: #fff; }
+    img { max-width: 100%; display: block; }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 18px;
+      padding: 14px 28px;
+      background: rgba(7, 11, 18, 0.78);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .mark {
+      font-family: var(--pixel);
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--cyan);
+      margin-right: auto;
+    }
+    .nav a {
+      color: var(--muted);
+      font-family: var(--pixel);
+      font-size: 14px;
+      letter-spacing: 0.02em;
+    }
+    .nav a:hover, .nav a.active { color: var(--text); }
+    .nav-links { display: flex; gap: 18px; flex-wrap: wrap; }
+
+    .wrap { position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; padding: 36px 24px 80px; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 176px 1fr;
+      gap: 36px;
+      align-items: center;
+      padding: 28px 0 18px;
+    }
+    .frame {
+      position: relative;
+      width: 176px;
+      height: 176px;
+    }
+    .frame::before, .frame::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid var(--cyan);
+      z-index: 2;
+    }
+    .frame::before { top: -6px; left: -6px; border-right: 0; border-bottom: 0; }
+    .frame::after { right: -6px; bottom: -6px; border-left: 0; border-top: 0; }
+    .portrait {
+      width: 176px;
+      height: 176px;
+      border-radius: 0;
+      object-fit: cover;
+      border: 4px solid #67e8ff;
+      box-shadow: 4px 4px 0 #9b8cff;
+    }
+    .scan {
+      position: absolute;
+      left: 4px;
+      right: 4px;
+      height: 4px;
+      background: rgba(103, 232, 255, 0.85);
+      animation: sweep 3.6s steps(12) infinite;
+      pointer-events: none;
+    }
+    @keyframes sweep {
+      0% { top: 6%; opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { top: 76%; opacity: 0; }
+    }
+    .kicker {
+      font-family: var(--pixel);
       font-size: 12px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 1001;
-      transition: background 0.3s;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin: 0 0 8px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 0.95;
+      font-family: var(--pixel);
+      font-weight: 600;
+      letter-spacing: 0;
+      color: #f4fbff;
+      text-shadow: 3px 3px 0 rgba(103, 232, 255, 0.35);
+    }
+    .lede { color: var(--muted); margin: 14px 0 18px; max-width: 680px; }
+    .chips, .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip, .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(103, 232, 255, 0.35);
+      border-radius: 0;
+      padding: 6px 12px;
+      color: #e9fbff;
+      background: rgba(103, 232, 255, 0.06);
+      font-family: var(--pixel);
+      font-size: 14px;
+      box-shadow: inset 0 0 12px rgba(103, 232, 255, 0.08);
+    }
+    .chip::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 0;
+      background: var(--cyan);
+      box-shadow: 2px 2px 0 var(--violet);
+    }
+    .btn:hover { border-color: var(--cyan); color: #fff; background: rgba(103, 232, 255, 0.08); }
+    .actions { margin-top: 16px; }
+
+    section { margin-top: 54px; }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .idx {
+      font-family: var(--pixel);
+      color: var(--violet);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+    }
+    h2 { margin: 0; font-size: 28px; letter-spacing: 0; font-family: var(--pixel); }
+    .panel, .product-card, .timeline, .award {
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(16, 28, 48, 0.82), rgba(8, 14, 26, 0.78));
+      border: 2px solid rgba(103, 232, 255, 0.55);
+      border-radius: 0;
+      padding: 22px 24px;
+      box-shadow: 6px 6px 0 rgba(155, 140, 255, 0.22);
+    }
+    .panel p:last-child { margin-bottom: 0; }
+    strong { font-weight: 600; }
+
+    .story {
+      display: grid;
+      grid-template-columns: 148px 1fr;
+      gap: 18px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+    .story:first-of-type { border-top: 0; padding-top: 0; }
+    .when {
+      font-family: var(--pixel);
+      color: var(--cyan);
+      font-size: 13px;
+    }
+    .story h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.02em; }
+    .story p { margin: 0 0 8px; color: #d5deea; }
+    .note {
+      display: inline-block;
+      margin-top: 4px;
+      color: var(--hot);
+      font-family: var(--pixel);
+      font-size: 12px;
+      letter-spacing: 0.04em;
+    }
+    .shot {
+      border-radius: 0;
+      border: 1px solid var(--line);
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: #05080e;
+    }
+    .story.media { grid-template-columns: 148px 1.1fr 0.9fr; align-items: center; }
+
+    .group-label {
+      font-family: var(--pixel);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin: 8px 0 10px;
+    }
+    .paper {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: start;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+    .paper p { margin: 0; }
+    .venue {
+      font-family: var(--pixel);
+      font-size: 12px;
+      color: #d7f7ff;
+      border: 1px solid var(--line-strong);
+      border-radius: 0;
+      padding: 4px 10px;
+      white-space: nowrap;
+    }
+    .esi {
+      display: inline-block;
+      margin-left: 6px;
+      color: #ffd7a1;
+      border-color: rgba(255, 180, 92, 0.45);
+    }
+    .links { margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .links a {
+      font-family: var(--pixel);
+      font-size: 12px;
+      border-bottom: 1px solid rgba(103, 232, 255, 0.35);
+    }
+    .fine { color: var(--dim); font-size: 13px; margin: 12px 0 0; }
+
+    .split { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; }
+    .award h3 { margin: 0 0 8px; }
+    .product-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .product-links a {
+      font-family: var(--pixel);
+      padding: 10px 14px;
+      border-radius: 0;
+      border: 1px solid var(--line-strong);
+      color: var(--text);
+      background: rgba(103, 232, 255, 0.06);
+    }
+    .step { display: grid; grid-template-columns: 132px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+    .step:first-of-type { border-top: 0; }
+    .step .when { padding-top: 2px; }
+    .award li { margin: 10px 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .tags span {
+      font-family: var(--pixel);
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 0;
+      border: 1px solid var(--line);
+      color: #d5deea;
     }
 
-    .close-book-btn:hover {
-      background: #cc0000;
-    }
-
-    /* Footer */
     footer {
-      text-align: center;
-      padding: 3rem 2rem 2rem;
-      margin-top: 4rem;
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+      z-index: 1;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 24px 40px;
+      color: var(--dim);
+      font-family: var(--pixel);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .links {
-        justify-content: center;
-      }
-      .container {
-        padding: 1rem;
-      }
-      h1 {
-        font-size: 2.2rem;
-      }
+    .book {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 30;
+      width: 84px;
+    }
+    .book img {
+      width: 84px;
+      height: 84px;
+      object-fit: cover;
+      border-radius: 0;
+      border: 1px solid var(--line-strong);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+    .book button {
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 22px;
+      height: 22px;
+      border-radius: 0;
+      border: 0;
+      background: #ff5d73;
+      color: white;
+      cursor: pointer;
     }
 
-    /* Animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    @media (prefers-reduced-motion: reduce) {
+      .orb, .scan { animation: none; }
+      #net { display: none; }
     }
-
-    main > section {
-      animation: fadeInUp 0.8s ease-out forwards;
+    @media (max-width: 860px) {
+      .hero, .story, .story.media, .split, .paper, .step { grid-template-columns: 1fr; }
+      .nav { align-items: flex-start; flex-direction: column; }
+      .mark { margin-right: 0; }
+      .frame, .portrait { width: 128px; height: 128px; }
+      .venue { justify-self: start; }
     }
-
-    main > section:nth-child(1) { animation-delay: 0.1s; }
-    main > section:nth-child(2) { animation-delay: 0.2s; }
-    main > section:nth-child(3) { animation-delay: 0.3s; }
-    main > section:nth-child(4) { animation-delay: 0.4s; }
-    main > section:nth-child(5) { animation-delay: 0.5s; }
-    main > section:nth-child(6) { animation-delay: 0.6s; }
-    main > section:nth-child(7) { animation-delay: 0.7s; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <canvas id="net"></canvas>
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+  <nav class="nav">
+    <div class="mark">JINFAN HU</div>
+    <div class="nav-links">
+      <a href="#biography">Biography</a>
+      <a href="#headlines">Headlines</a>
+      <a href="#publications">Publications</a>
+      <a href="#products">Products</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#honors">Honors</a>
+      <a href="#activities">Activities</a>
+    </div>
+  </nav>
 
-    <header>
-      <img src="https://J-FHu.github.io/images/Hu_small.jpg" alt="Jinfan Hu" class="profile-img" />
-      <div class="bio">
+  <div class="wrap">
+    <header class="hero">
+      <div class="frame">
+        <img class="portrait" src="images/Hu_small.jpg" alt="Jinfan Hu">
+        <span class="scan"></span>
+      </div>
+      <div>
+        <p class="kicker">Ph.D. · Computer Applied Technology</p>
         <h1>Jinfan Hu</h1>
-        <p class="affiliation">
-          Ph.D. in Computer Applied Technology @ <a href="https://www.siat.ac.cn/" target="_blank">SIAT, CAS</a> | Advised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><br>
-          Low-level Vision, Model Interpretability, and Generative Models.<br><br>
-          
-        </p>
-        <div class="links">
-          <a href="mailto:whojf0206@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ" class="btn" target="_blank"><i class="fab fa-google"></i> Scholar</a>
-          <a href="https://github.com/J-FHu" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <p class="lede">Ph.D. in Computer Applied Technology @ <a href="https://www.siat.ac.cn/" target="_blank">SIAT, CAS</a> | Advised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><br>Low-level Vision, Model Interpretability, and Generative Models.</p>
+        <div class="chips">
+          <span class="chip">Low-level Vision</span>
+          <span class="chip">Interpretability</span>
+          <span class="chip">Generative Models</span>
+        </div>
+        <div class="actions">
+          <a class="btn" href="mailto:whojf0206@gmail.com">Email</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=zh-CN&user=hT-EiJEAAAAJ" target="_blank">Scholar</a>
+          <a class="btn" href="https://github.com/J-FHu" target="_blank">GitHub</a>
         </div>
       </div>
     </header>
-    
-<!-- 顶部固定导航栏 -->
-<nav class="top-nav">
-  <div class="nav-links-group">
-    <a href="#biography" class="top-nav-link">Biography</a>
-    <a href="#headlines" class="top-nav-link">Headlines</a>
-    <a href="#publications" class="top-nav-link">Publications</a>
-    <a href="#products" class="top-nav-link">Products</a>
-    <a href="#experiences" class="top-nav-link">Experiences</a>
-    <a href="#honors" class="top-nav-link">Honors</a>
-    <a href="#activities" class="top-nav-link">Activities</a>
-  </div>
-  <button class="theme-toggle-in-nav" id="themeToggle">
-    <i class="fas fa-moon"></i>
-  </button>
-</nav>
-    
-    <main>
-      <!-- Biography -->
-      <section id="biography">
-        <h2>📚 Biography</h2>
+
+    <section id="biography">
+      <div class="section-head"><span class="idx">01</span><h2>Biography</h2></div>
+      <div class="panel">
         <p><strong>Jinfan Hu</strong> received his Ph.D. degree in Computer Applied Technology from <a href="http://xpixel.group/index.html" target="_blank">XPixel Group</a>, Shenzhen Institutes of Advanced Technology (<a href="https://www.siat.ac.cn/" target="_blank">SIAT</a>), Chinese Academy of Sciences (<a href="https://english.cas.cn/index.shtml" target="_blank">CAS</a>), advised by Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a> (Sep. 2022 – Jun. 2026). He received his M.S. degree in Mathematics in 2022, supervised by Prof. <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm" target="_blank">Ting-Zhu Huang</a> and Prof. <a href="https://liangjiandeng.github.io/" target="_blank">Liang-Jian Deng</a>, and his B.S. degree in Information and Computing Science in 2019 from the University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>), Chengdu, China. His research interests include low-level vision (image and video restoration, super-resolution, and generative models) and model interpretability (causal analysis in deep networks and model generalization).</p>
-      </section>
+      </div>
+    </section>
 
-<!-- Headlines -->
-<section id="headlines">
-  <h2>🔥 Headlines</h2>
-
-  <!-- NeurIPS 2026 -->
-  <div class="pub-item">
-    <h3>[09/2026] 🎉🎉🎉 Two papers are accepted by NeurIPS</h3>
-    <p>The position paper <a href="https://arxiv.org/abs/2603.00643" target="_blank">Evaluation of Visual Processing Should Be Human-Centered, Not Metric-Centered</a> (equal contribution) argues that visual-processing evaluation should follow human perception, rather than a single image-quality metric.</p>
-    <p><em>Harnessing Image Diffusion Prior for Photo-Realistic Video Restoration</em> transfers image diffusion priors to photo-realistic video restoration.</p>
-  </div>
-
-    <!-- Generalization Paper -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; flex-direction: row-reverse;">
-    <div style="flex: 1; min-width: 300px;">
-      <h3>[03/2026] 🎉🎉🎉 One paper is published in Pattern Recognition</h3>
-      <p>This <a href="https://arxiv.org/abs/2502.12600" target="_blank">paper</a> demonstrates that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation!</p>
-      <p><strong>Takeaway:</strong> Teach networks to see the content, not just remove degradation. </p>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-      <img src="https://J-FHu.github.io/images/Real_compare.png" alt="Generalization Comparison" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
-    </div>
-  </div>
-
-  <!-- CVPR 2026 Findings -->
-  <div class="pub-item">
-    <h3>[02/2026] 🎉🎉🎉 One paper is accepted by CVPR Findings</h3>
-    <p><a href="https://arxiv.org/abs/2603.05010" target="_blank">How Far Have We Gone in Generative Image Restoration?</a> studies the capability, limitations, and evaluation practices of generative image restoration. <a href="https://github.com/yxyuanxiao/how-far-have-we-gone" target="_blank">[Code]</a></p>
-  </div>
-  
-    <!-- HYPIR -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;flex-direction: row-reverse;">
-  <div style="flex: 1; min-width: 300px;">
-    <h3>[08/2025] 🎉🎉🎉 We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
-    <p><a href="https://arxiv.org/pdf/2507.20590" target="_blank">HYPIR</a> introduces a simple yet powerful paradigm: fine-tuning a pre-trained diffusion model with adversarial (GAN) loss — <strong>no diffusion sampling, no extra adapters</strong>. This achieves an unprecedented balance of speed, fidelity, and quality. Initializing GAN training from a pre-trained diffusion model anchors the model near the natural image manifold, ensuring stable training, faster convergence, and superior results — all in a single forward pass.</p>
-    <p><strong>Official Webpage:</strong> The high-speed, high-performance image restoration model is now available on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
-  </div>
-  <div style="flex: 1; min-width: 300px;">
-    <img src="https://J-FHu.github.io/images/hypir.png" alt="HYPIR Teaser" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
-  </div>
-</div>
-  
-  <!-- CEM Paper -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 300px;">
-      <h3>[03/2025] 🎉🎉🎉 One paper is accepted by TPAMI</h3>
-      <p>We propose a model/task-agnostic interpreting method (<a href="https://arxiv.org/abs/2407.19789" target="_blank">CEM</a>) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models!</p>
-      <p><strong>Key Insight:</strong> Correlation does not imply causation — only causal analysis reveals why.</p>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-      <img src="https://J-FHu.github.io/images/teaser_CEM.png" alt="CEM Teaser" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
-    </div>
-  </div>
-
-
-  <!-- Book -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 300px;">
-      <h3>[02/2025] 🎉🎉🎉 The book 《底层视觉之美》 has been published</h3>
-      <p>Co-authored with my supervisor Prof. Chao Dong. We hope this book provides valuable insights for researchers and enthusiasts in the Low-level Vision field!</p>
-      <p><strong>Available on:</strong> <a href="https://item.jd.com/10137558708716.html" target="_blank">JD.com</a></p>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-      <img src="https://J-FHu.github.io/images/book.jpg" alt="The Beauty of Low-level Vision Book" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
-    </div>
-  </div>
-
-  <!-- SUPIR -->
-  <div class="pub-item" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; flex-direction: row-reverse;">
-    <div style="flex: 1; min-width: 300px;">
-      <h3>[01/2024] 🎉🎉🎉 We release a groundbreaking image restoration method (SUPIR)</h3>
-      <p>That harnesses the generative prior and the power of model scaling up. Our method demonstrates unprecedented performance in real-world image restoration tasks! </p>
-      <p><strong>Experience it now:</strong> <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
-    </div>
-    <div style="flex: 1; min-width: 300px;">
-      <img src="https://J-FHu.github.io/images/teaser.png" alt="SUPIR Teaser" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
-    </div>
-  </div>
-</section>
-
-      <!-- Publications -->
-      <section id="publications">
-        <div class="pub-section-header">
-          <h2>📝 Publications</h2>
-          <button class="pub-toggle-btn" id="pubToggle">
-            <span id="toggleIcon">▲</span>
-          </button>
-        </div>
-        <div class="publication-list" id="pubList">
-          <h3><em>Book</em></h3>
-          <div class="pub-item">
-            <p>Chao Dong, <strong>Jinfan Hu</strong>. <a href="https://item.jd.com/10137558708716.html" target="_blank">The Beauty of Low-level Vision</a> (《底层视觉之美》). Publishing House of Electronics Industry, 2025.</p>
+    <section id="headlines">
+      <div class="section-head"><span class="idx">02</span><h2>Headlines</h2></div>
+      <div class="panel">
+        <article class="story">
+          <div class="when">09/2026</div>
+          <div>
+            <h3>Two papers are accepted by NeurIPS</h3>
+            <p>The position paper <a href="https://arxiv.org/abs/2603.00643" target="_blank">Evaluation of Visual Processing Should Be Human-Centered, Not Metric-Centered</a> (equal contribution) argues that visual-processing evaluation should follow human perception, rather than a single image-quality metric.</p>
+            <p><em>Harnessing Image Diffusion Prior for Photo-Realistic Video Restoration</em> transfers image diffusion priors to photo-realistic video restoration.</p>
           </div>
+        </article>
+        <article class="story media">
+          <div class="when">03/2026</div>
+          <div>
+            <h3>One paper is published in Pattern Recognition</h3>
+            <p>This <a href="https://arxiv.org/abs/2502.12600" target="_blank">paper</a> demonstrates that the common strategy of blindly expanding the training set is ineffective. Instead, the key to better generalization lies in guiding the network to learn the image content rather than the degradation!</p>
+            <span class="note">Takeaway: Teach networks to see the content, not just remove degradation.</span>
+          </div>
+          <img class="shot" src="images/Real_compare.png" alt="Generalization Comparison">
+        </article>
+        <article class="story">
+          <div class="when">02/2026</div>
+          <div>
+            <h3>One paper is accepted by CVPR Findings</h3>
+            <p><a href="https://arxiv.org/abs/2603.05010" target="_blank">How Far Have We Gone in Generative Image Restoration?</a> studies the capability, limitations, and evaluation practices of generative image restoration. <a href="https://github.com/yxyuanxiao/how-far-have-we-gone" target="_blank">[Code]</a></p>
+          </div>
+        </article>
+        <article class="story media">
+          <div class="when">08/2025</div>
+          <div>
+            <h3>We propose HYPIR: A Step Toward the Next Generation of Image Restoration</h3>
+            <p><a href="https://arxiv.org/pdf/2507.20590" target="_blank">HYPIR</a> introduces a simple yet powerful paradigm: fine-tuning a pre-trained diffusion model with adversarial (GAN) loss — <strong>no diffusion sampling, no extra adapters</strong>. This achieves an unprecedented balance of speed, fidelity, and quality. Initializing GAN training from a pre-trained diffusion model anchors the model near the natural image manifold, ensuring stable training, faster convergence, and superior results — all in a single forward pass.</p>
+            <p><strong>Official Webpage:</strong> The high-speed, high-performance image restoration model is now available on <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
+          </div>
+          <img class="shot" src="images/hypir.png" alt="HYPIR Teaser">
+        </article>
+        <article class="story media">
+          <div class="when">03/2025</div>
+          <div>
+            <h3>One paper is accepted by TPAMI</h3>
+            <p>We propose a model/task-agnostic interpreting method (<a href="https://arxiv.org/abs/2407.19789" target="_blank">CEM</a>) for low-level vision models, bringing causality analysis into the field. We hope this work contributes to a deeper understanding and enhancement of low-level vision models!</p>
+            <span class="note">Key Insight: Correlation does not imply causation — only causal analysis reveals why.</span>
+          </div>
+          <img class="shot" src="images/teaser_CEM.png" alt="CEM Teaser">
+        </article>
+        <article class="story media">
+          <div class="when">02/2025</div>
+          <div>
+            <h3>The book 《底层视觉之美》 has been published</h3>
+            <p>Co-authored with my supervisor Prof. Chao Dong. We hope this book provides valuable insights for researchers and enthusiasts in the Low-level Vision field!</p>
+            <p><strong>Available on:</strong> <a href="https://item.jd.com/10137558708716.html" target="_blank">JD.com</a></p>
+          </div>
+          <img class="shot" src="images/book.jpg" alt="The Beauty of Low-level Vision Book">
+        </article>
+        <article class="story media">
+          <div class="when">01/2024</div>
+          <div>
+            <h3>We release a groundbreaking image restoration method (SUPIR)</h3>
+            <p>That harnesses the generative prior and the power of model scaling up. Our method demonstrates unprecedented performance in real-world image restoration tasks!</p>
+            <p><strong>Experience it now:</strong> <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
+          </div>
+          <img class="shot" src="images/teaser.png" alt="SUPIR Teaser">
+        </article>
+      </div>
+    </section>
 
-          <h3><em>Selected Papers</em></h3>
-          <div class="pub-item">
-            <p><strong>J. Hu<sup>*</sup></strong>, Z. You<sup>*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. <strong><em>Pattern Recognition</em></strong>, 2026. <a href="https://arxiv.org/abs/2502.12600" target="_blank">[PDF]</a></p>
+    <section id="publications">
+      <div class="section-head"><span class="idx">03</span><h2>Publications</h2></div>
+      <div class="panel">
+        <div class="group-label">Book</div>
+        <article class="paper">
+          <p>Chao Dong, <strong>Jinfan Hu</strong>. <a href="https://item.jd.com/10137558708716.html" target="_blank">The Beauty of Low-level Vision</a> (《底层视觉之美》). Publishing House of Electronics Industry, 2025.</p>
+          <span class="venue">Book · 2025</span>
+        </article>
+        <div class="group-label" style="margin-top:22px;">Selected Papers</div>
+        <article class="paper">
+          <div>
+            <p><strong>J. Hu<sup>*</sup></strong>, Z. You<sup>*</sup>, J. Gu, K. Zhu, T. Xue, C. Dong. Revisiting the Generalization Problem of Low-level Vision Models Through the Lens of Image Deraining. <strong><em>Pattern Recognition</em></strong>, 2026.</p>
+            <div class="links"><a href="https://arxiv.org/abs/2502.12600" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p><strong>J. Hu</strong>, J. Gu, S. Yu, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></strong>, 2025. <a href="https://github.com/J-FHu/CEM" target="_blank">[Code]</a><a href="https://arxiv.org/abs/2407.19789" target="_blank">[PDF]</a></p>
+          <span class="venue">PR · 2026</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p><strong>J. Hu</strong>, J. Gu, S. Yu, F. Yu, Z. Li, Z. You, C. Lu, C. Dong. Interpreting Low-level Vision Models with Causal Effect Maps. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em></strong>, 2025.</p>
+            <div class="links"><a href="https://github.com/J-FHu/CEM" target="_blank">Code</a><a href="https://arxiv.org/abs/2407.19789" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. <strong><em>IEEE Geoscience and Remote Sensing Letters (GRSL)</em></strong>, 2022. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/J-FHu/Fusformer" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/9841513" target="_blank">[PDF]</a></p>
+          <span class="venue">TPAMI · 2025</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, H.-X. Dou, D. Hong, and G. Vivone. Fusformer: A Transformer-based Fusion Approach for Hyperspectral Image Super-resolution. <strong><em>IEEE Geoscience and Remote Sensing Letters (GRSL)</em></strong>, 2022. <span class="venue esi">ESI Highly Cited</span></p>
+            <div class="links"><a href="https://github.com/J-FHu/Fusformer" target="_blank">Code</a><a href="https://ieeexplore.ieee.org/abstract/document/9841513" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. <strong><em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em></strong>, 2021. <span class="highlight">ESI Highly Cited</span> <a href="https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html" target="_blank">[Project Page]</a><a href="https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf" target="_blank">[PDF]</a></p>
+          <span class="venue">GRSL · 2022</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p><strong>J.-F. Hu</strong>, T.-Z. Huang, L.-J. Deng, T.-X. Jiang, G. Vivone, and J. Chanussot. Hyperspectral Image Super-Resolution via Deep Spatiospectral Attention Convolutional Neural Networks. <strong><em>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</em></strong>, 2021. <span class="venue esi">ESI Highly Cited</span></p>
+            <div class="links"><a href="https://liangjiandeng.github.io/Projects_Res/HSRnet_2021tnnls.html" target="_blank">Project</a><a href="https://liangjiandeng.github.io/papers/2021/HSRnet_tnnls_2021.pdf" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>F. Yu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, Z. You, X. Yin, H. An, X. Lin, H. Li, C. Dong, J. Gu. Evaluation of Visual Processing Should Be Human-Centered, Not Metric-Centered. <strong><em>Advances in Neural Information Processing Systems (NeurIPS, Position Paper Track)</em></strong>, 2026. <a href="https://arxiv.org/abs/2603.00643" target="_blank">[PDF]</a></p>
+          <span class="venue">TNNLS · 2021</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>F. Yu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, Z. You, X. Yin, H. An, X. Lin, H. Li, C. Dong, J. Gu. Evaluation of Visual Processing Should Be Human-Centered, Not Metric-Centered. <strong><em>Advances in Neural Information Processing Systems (NeurIPS, Position Paper Track)</em></strong>, 2026.</p>
+            <div class="links"><a href="https://arxiv.org/abs/2603.00643" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
+          <span class="venue">NeurIPS · 2026</span>
+        </article>
+        <article class="paper">
+          <div>
             <p>F. Yu, H. An, <strong>J. Hu</strong>, X. Lin, Z. You, J. Wang, H. Li, C. Dong, J. Gu. Harnessing Image Diffusion Prior for Photo-Realistic Video Restoration. <strong><em>Advances in Neural Information Processing Systems (NeurIPS)</em></strong>, 2026.</p>
           </div>
-          <div class="pub-item">
-            <p>X. Yin, <strong>J. Hu</strong>, Z. You, K. Yan, Y. Tang, C. Dong, J. Gu. How Far Have We Gone in Generative Image Restoration? A Study on its Capability, Limitations and Evaluation Practices. <strong><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR, Findings Track)</em></strong>, 2026. <a href="https://github.com/yxyuanxiao/how-far-have-we-gone" target="_blank">[Code]</a><a href="https://arxiv.org/abs/2603.05010" target="_blank">[PDF]</a></p>
+          <span class="venue">NeurIPS · 2026</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>X. Yin, <strong>J. Hu</strong>, Z. You, K. Yan, Y. Tang, C. Dong, J. Gu. How Far Have We Gone in Generative Image Restoration? A Study on its Capability, Limitations and Evaluation Practices. <strong><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR, Findings Track)</em></strong>, 2026.</p>
+            <div class="links"><a href="https://github.com/yxyuanxiao/how-far-have-we-gone" target="_blank">Code</a><a href="https://arxiv.org/abs/2603.05010" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>X. Lin, F. Yu, <strong>J. Hu</strong>, Z. You, W. Shi, Jimmy S. Ren, J. Gu, C. Dong. Harnessing Diffusion-Yielded Score Priors for Image Restoration. <strong><em>ACM SIGGRAPH Asia</em></strong>, 2025. <a href="https://github.com/XPixelGroup/HYPIR" target="_blank">[Code]</a><a href="https://arxiv.org/pdf/2507.20590" target="_blank">[PDF]</a></p>
+          <span class="venue">CVPR Findings · 2026</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>X. Lin, F. Yu, <strong>J. Hu</strong>, Z. You, W. Shi, Jimmy S. Ren, J. Gu, C. Dong. Harnessing Diffusion-Yielded Score Priors for Image Restoration. <strong><em>ACM SIGGRAPH Asia</em></strong>, 2025.</p>
+            <div class="links"><a href="https://github.com/XPixelGroup/HYPIR" target="_blank">Code</a><a href="https://arxiv.org/pdf/2507.20590" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>F. Yu, J. Gu, <strong>J. Hu</strong>, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. <strong><em>International Conference on Learning Representations (ICLR)</em></strong>, 2025. <a href="https://openreview.net/forum?id=uJqKf24HGN" target="_blank">[PDF]</a></p>
+          <span class="venue">SIGGRAPH Asia · 2025</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>F. Yu, J. Gu, <strong>J. Hu</strong>, Z. Li, and C. Dong. UniCon: Unidirectional Information Flow for Effective Control of Large-Scale Diffusion Models. <strong><em>International Conference on Learning Representations (ICLR)</em></strong>, 2025.</p>
+            <div class="links"><a href="https://openreview.net/forum?id=uJqKf24HGN" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>F. Yu, J. Gu, Z. Li, <strong>J. Hu</strong>, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. <strong><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em></strong>, 2024. <a href="https://supir.xpixel.group/" target="_blank">[Project Page]</a><a href="https://arxiv.org/abs/2401.13627" target="_blank">[PDF]</a></p>
+          <span class="venue">ICLR · 2025</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>F. Yu, J. Gu, Z. Li, <strong>J. Hu</strong>, X. Kong, X. Wang, J. He, Y. Qiao, and C. Dong. Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild. <strong><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em></strong>, 2024.</p>
+            <div class="links"><a href="https://supir.xpixel.group/" target="_blank">Project</a><a href="https://arxiv.org/abs/2401.13627" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>R. Ran, L.-J. Deng, T.-X. Jiang, <strong>J.-F. Hu</strong>, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. <strong><em>IEEE Transactions on Cybernetics (TCYB)</em></strong>, 2023. <span class="highlight">ESI Highly Cited</span> <a href="https://github.com/Evangelion09/GuidedNet" target="_blank">[Code]</a><a href="https://ieeexplore.ieee.org/abstract/document/10035506/" target="_blank">[PDF]</a></p>
+          <span class="venue">CVPR · 2024</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>R. Ran, L.-J. Deng, T.-X. Jiang, <strong>J.-F. Hu</strong>, J. Chanussot, and G. Vivone. GuidedNet: A General CNN Fusion Framework via High-resolution Guidance for Hyperspectral Image Super-resolution. <strong><em>IEEE Transactions on Cybernetics (TCYB)</em></strong>, 2023. <span class="venue esi">ESI Highly Cited</span></p>
+            <div class="links"><a href="https://github.com/Evangelion09/GuidedNet" target="_blank">Code</a><a href="https://ieeexplore.ieee.org/abstract/document/10035506/" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>X. Liu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. <strong><em>European Conference on Computer Vision Workshop (ECCVW)</em></strong>, 2022. <a href="https://github.com/J-FHu/UDCUNet" target="_blank">[Code]</a><a href="https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8" target="_blank">[PDF]</a></p>
+          <span class="venue">TCYB · 2023</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>X. Liu<sup>*</sup>, <strong>J. Hu<sup>*</sup></strong>, X. Chen, and C. Dong. UDC-UNet: Under-Display Camera Image Restoration via U-shape Dynamic Network. <strong><em>European Conference on Computer Vision Workshop (ECCVW)</em></strong>, 2022.</p>
+            <div class="links"><a href="https://github.com/J-FHu/UDCUNet" target="_blank">Code</a><a href="https://link.springer.com/chapter/10.1007/978-3-031-25072-9_8" target="_blank">PDF</a></div>
           </div>
-          <div class="pub-item">
-            <p>S. Peng, L.-J. Deng, <strong>J.-F. Hu</strong>, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. <strong><em>International Joint Conferences on Artificial Intelligence (IJCAI)</em></strong>, 2022. <a href="https://github.com/liangjiandeng/ADKNet" target="_blank">[Code]</a><a href="https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf" target="_blank">[PDF]</a></p>
+          <span class="venue">ECCVW · 2022</span>
+        </article>
+        <article class="paper">
+          <div>
+            <p>S. Peng, L.-J. Deng, <strong>J.-F. Hu</strong>, and Y.-W. Zhuo. Source-Adaptive Discriminative Kernels based Network for Remote Sensing Pansharpening. <strong><em>International Joint Conferences on Artificial Intelligence (IJCAI)</em></strong>, 2022.</p>
+            <div class="links"><a href="https://github.com/liangjiandeng/ADKNet" target="_blank">Code</a><a href="https://pluto-wei.github.io/papers/2022/peng-ijcai2022.pdf" target="_blank">PDF</a></div>
           </div>
-          <p align="left"><small>(<sup>*</sup> Equal contributions)</small></p>
-        </div>
-      </section>
+          <span class="venue">IJCAI · 2022</span>
+        </article>
+        <p class="fine">(* Equal contributions)</p>
+      </div>
+    </section>
 
-      <!-- Products -->
-      <section id="products">
-        <h2>📸 Products</h2>
+    <section id="products">
+      <div class="section-head"><span class="idx">04</span><h2>Products</h2></div>
+      <div class="product-card">
         <p>For a comprehensive exploration of our technologies, visit our official websites: <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a> and <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>.</p>
-      </section>
+        <div class="product-links">
+          <a href="https://www.suppixel.cn/home" target="_blank">明犀AI</a>
+          <a href="https://supir.suppixel.ai/home" target="_blank">SupPixel AI</a>
+        </div>
+      </div>
+    </section>
 
-      <!-- Experiences -->
-      <section id="experiences">
-        <h2>📖 Experiences</h2>
-        <ul>
-          <li>09/2022-06/2026: Ph.D. in Computer Applied Technology. (Advisor: Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a>); <a href="http://xpixel.group/index.html" target="_blank">XPixel Group</a>, Shenzhen Institutes of Advanced Technology (<a href="https://www.siat.ac.cn/" target="_blank">SIAT</a>), Chinese Academy of Sciences (<a href="https://english.cas.cn/index.shtml" target="_blank">CAS</a>)</li>
-          <li>09/2019-06/2022: M.S. in Mathematics. (Advisors: Prof. <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm" target="_blank">Ting-Zhu Huang</a> and Prof. <a href="https://liangjiandeng.github.io/" target="_blank">Liang-Jian Deng</a>); University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>)</li>
-          <li>09/2015-06/2019: B.S. in Information and Computing Science, School of Mathematical Sciences; University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>)</li>
-        </ul>
-      </section>
+    <section id="experiences">
+      <div class="section-head"><span class="idx">05</span><h2>Experiences</h2></div>
+      <div class="timeline">
+        <div class="step">
+          <div class="when">09/2022-06/2026</div>
+          <div>Ph.D. in Computer Applied Technology. (Advisor: Prof. <a href="http://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a>); <a href="http://xpixel.group/index.html" target="_blank">XPixel Group</a>, Shenzhen Institutes of Advanced Technology (<a href="https://www.siat.ac.cn/" target="_blank">SIAT</a>), Chinese Academy of Sciences (<a href="https://english.cas.cn/index.shtml" target="_blank">CAS</a>)</div>
+        </div>
+        <div class="step">
+          <div class="when">09/2019-06/2022</div>
+          <div>M.S. in Mathematics. (Advisors: Prof. <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm" target="_blank">Ting-Zhu Huang</a> and Prof. <a href="https://liangjiandeng.github.io/" target="_blank">Liang-Jian Deng</a>); University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>)</div>
+        </div>
+        <div class="step">
+          <div class="when">09/2015-06/2019</div>
+          <div>B.S. in Information and Computing Science, School of Mathematical Sciences; University of Electronic Science and Technology of China (<a href="https://www.uestc.edu.cn/" target="_blank">UESTC</a>)</div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Honors and Awards -->
-      <section id="honors">
-        <h2>🏆 Honors and Awards</h2>
-        <ul>
-          <li>2nd Place, ECCV <a href="http://mipi-challenge.org/" target="_blank">MIPI Challenge</a> on Under-Display Camera (UDC) Image Restoration, 2022</li>
-          <li>National Graduate Scholarship, Ministry of Education, China, 2021</li>
-          <li>National First Prize, Contemporary Undergraduate Mathematical Contest in Modeling (<a href="http://www.mcm.edu.cn/" target="_blank">CUMCM</a>), 2017</li>
-        </ul>
-      </section>
-
-        <!-- Academic Activities -->
-<section id="activities">
-  <h2>💬 Academic Activities</h2>
-  <p><strong>Journal &amp; Conference Reviewer:</strong> CVPR, TPAMI, TIP, TCYB, TMM, TIFS, TGRS, GRSL, TCI...</p>
-</section>
-      </main>
-
-    <footer>
-      © 2026 Jinfan Hu.
-    </footer>
-
-    
-<!-- Floating Book Widget with Close Button -->
-<div class="book-widget" id="bookWidget">
-  <div class="close-book-btn" id="closeBookBtn">×</div>
-  <a href="https://item.jd.com/10137558708716.html  " target="_blank">
-    <img src="https://J-FHu.github.io/images/bookicon.jpg  " alt="《底层视觉之美》">
-  </a>
-</div>
-
-<style>
-/* ========== 顶部固定导航栏 ========== */
-.top-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(10, 20, 40, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 0 2rem;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(0, 200, 255, 0.2);
-  transition: var(--transition);
-}
-
-body[data-theme="light"] .top-nav {
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid rgba(13, 110, 253, 0.2);
-}
-
-/* 链接组 - 占据剩余空间并居中 */
-.nav-links-group {
-  display: flex;
-  gap: 2rem;
-  flex-grow: 1; /* 占据剩余空间 */
-  justify-content: center; /* 内部链接居中 */
-}
-
-/* 主题切换按钮 - 靠右 */
-.theme-toggle-in-nav {
-  background: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  transition: var(--transition);
-  margin-left: auto; /* 关键：将按钮推到最右边 */
-}
-
-.theme-toggle-in-nav:hover {
-  color: var(--accent);
-  background: rgba(0, 200, 255, 0.1);
-  transform: scale(1.05);
-}
-
-body[data-theme="light"] .theme-toggle-in-nav {
-  color: var(--text-secondary);
-}
-
-body[data-theme="light"] .theme-toggle-in-nav:hover {
-  color: var(--accent);
-  background: rgba(13, 110, 253, 0.1);
-}
-
-.top-nav-link {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  transition: var(--transition);
-}
-
-.top-nav-link:hover,
-.top-nav-link.active {
-  color: var(--accent);
-  background: rgba(0, 200, 255, 0.1);
-}
-
-/* 让主内容区域为顶部导航留出空间 */
-main {
-  margin-top: 80px; /* 60px (导航栏) + 20px (间距) */
-}
-
-/* 手机端适配 */
-@media (max-width: 768px) {
-  .top-nav {
-    padding: 0 1rem;
-    gap: 1rem;
-    height: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .top-nav-link {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.6rem;
-  }
-
-  main {
-    margin-top: 70px;
-  }
-}
-  
-  /* Floating Book Widget */
-  .book-widget {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 100px; 
-    height: 100px; 
-    z-index: 1000;
-    cursor: pointer;
-    transition: var(--transition);
-  }
-
-  .book-widget:hover {
-    transform: scale(1.1) rotate(5deg);
-  }
-
-  .book-widget img {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  }
-
-  /* Close Button for Book Widget */
-  .close-book-btn {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 35px;
-    height: 35px;
-    background: #ff4444;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1001;
-    transition: background 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .close-book-btn:hover {
-    background: #cc0000;
-    transform: scale(1.1);
-  }
-</style>
-
-    <!-- ClustrMaps Visitor Counter -->
-    <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=f7f8ff&w=353&t=tt&d=AOVMig58Ovuu2AnD7IJTeE1sDXwL6m8s9KHWeeFrQm8&co=1d78fd&cmn=e93f00&cmo=009b5c'></script>
-    <!-- Main JavaScript -->
-    <script>
-      // 顶部导航栏高亮脚本
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('.top-nav-link');
-  const sections = document.querySelectorAll('section');
-
-  // 平滑滚动
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop - 80, // 减去导航栏高度
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-
-  // 滚动高亮
-  window.addEventListener('scroll', function() {
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 200) {
-        current = '#' + section.getAttribute('id');
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === current) {
-        link.classList.add('active');
-      }
-    });
-  });
-});
-      
-      // Theme Toggle Script
-      const themeToggle = document.getElementById('themeToggle');
-      const body = document.body;
-
-      const savedTheme = 'light'; // 默认为 'light'
-      if (savedTheme === 'light') {
-        body.setAttribute('data-theme', 'light');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-      } else {
-        body.removeAttribute('data-theme'); // 确保移除属性，避免残留
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-      }
-      
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = body.getAttribute('data-theme');
-        if (currentTheme === 'light') {
-          body.removeAttribute('data-theme');
-          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-        } else {
-          body.setAttribute('data-theme', 'light');
-          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        }
-      });
-
-      // Publication Toggle Script
-      const pubToggle = document.getElementById('pubToggle');
-  const pubList = document.getElementById('pubList');
-
-  pubToggle.addEventListener('click', () => {
-    pubList.classList.toggle('collapsed'); 
-    if (pubList.classList.contains('collapsed')) {
-      pubToggle.innerHTML = '<span id="toggleIcon">▼</span>';
-    } else {
-      pubToggle.innerHTML = '<span id="toggleIcon">▲</span>';
-    }
-  });
-
-      // Book Widget Close Script
-      const closeBookBtn = document.getElementById('closeBookBtn');
-      const bookWidget = document.getElementById('bookWidget');
-
-      closeBookBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); //
-        bookWidget.style.display = 'none';
-      });
-
-      // 页面加载时检查是否之前已关闭
-      if (localStorage.getItem('bookWidgetClosed') === 'true') {
-        bookWidget.style.display = 'none';
-      }
-    </script>
+    <section id="honors">
+      <div class="section-head"><span class="idx">06</span><h2>Honors and Awards</h2></div>
+      <div class="split">
+        <div class="award">
+          <ul>
+            <li>2nd Place, ECCV <a href="http://mipi-challenge.org/" target="_blank">MIPI Challenge</a> on Under-Display Camera (UDC) Image Restoration, 2022</li>
+            <li>National Graduate Scholarship, Ministry of Education, China, 2021</li>
+            <li>National First Prize, Contemporary Undergraduate Mathematical Contest in Modeling (<a href="http://www.mcm.edu.cn/" target="_blank">CUMCM</a>), 2017</li>
+          </ul>
+        </div>
+        <div class="award" id="activities">
+          <h3>Academic Activities</h3>
+          <p><strong>Journal &amp; Conference Reviewer:</strong></p>
+          <div class="tags">
+            <span>CVPR</span><span>TPAMI</span><span>TIP</span><span>TCYB</span><span>TMM</span><span>TIFS</span><span>TGRS</span><span>GRSL</span><span>TCI</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
+
+  <footer>
+    <span>© 2026 Jinfan Hu</span>
+    <span>XPixel · SIAT · CAS</span>
+  </footer>
+
+  <div class="book" id="bookWidget">
+    <button id="closeBookBtn" aria-label="Close">×</button>
+    <a href="https://item.jd.com/10137558708716.html" target="_blank">
+      <img src="images/bookicon.jpg" alt="《底层视觉之美》">
+    </a>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("net");
+    const ctx = canvas.getContext("2d");
+    const nodes = Array.from({ length: 78 }, () => ({
+      x: Math.random(),
+      y: Math.random(),
+      vx: (Math.random() - 0.5) * 0.00035,
+      vy: (Math.random() - 0.5) * 0.00035,
+      r: Math.random() * 1.6 + 0.6
+    }));
+    const resize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+    const drawNet = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      nodes.forEach((node) => {
+        node.x += node.vx;
+        node.y += node.vy;
+        if (node.x < 0 || node.x > 1) node.vx *= -1;
+        if (node.y < 0 || node.y > 1) node.vy *= -1;
+      });
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const dx = (nodes[i].x - nodes[j].x) * canvas.width;
+          const dy = (nodes[i].y - nodes[j].y) * canvas.height;
+          const dist = Math.hypot(dx, dy);
+          if (dist < 150) {
+            ctx.strokeStyle = `rgba(103, 232, 255, ${0.16 * (1 - dist / 150)})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(nodes[i].x * canvas.width, nodes[i].y * canvas.height);
+            ctx.lineTo(nodes[j].x * canvas.width, nodes[j].y * canvas.height);
+            ctx.stroke();
+          }
+        }
+      }
+      nodes.forEach((node, index) => {
+        ctx.fillStyle = index % 5 === 0 ? "rgba(183, 168, 255, 0.9)" : "rgba(103, 232, 255, 0.9)";
+        const px = Math.round(node.x * canvas.width / 4) * 4;
+        const py = Math.round(node.y * canvas.height / 4) * 4;
+        ctx.fillRect(px, py, 4, 4);
+      });
+      requestAnimationFrame(drawNet);
+    };
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) drawNet();
+
+    const links = document.querySelectorAll(".nav a");
+    const sections = [...document.querySelectorAll("section")];
+    const setActive = () => {
+      let current = sections[0] && sections[0].id;
+      sections.forEach((section) => {
+        if (window.scrollY >= section.offsetTop - 120) current = section.id;
+      });
+      links.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+      });
+    };
+    document.addEventListener("scroll", setActive, { passive: true });
+    setActive();
+
+    const book = document.getElementById("bookWidget");
+    const closeBook = document.getElementById("closeBookBtn");
+    if (localStorage.getItem("bookWidgetClosed") === "true") book.style.display = "none";
+    closeBook.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      book.style.display = "none";
+      localStorage.setItem("bookWidgetClosed", "true");
+    });
+  </script>
 </body>
 </html>
